@@ -5,6 +5,9 @@
   font-family: "Poppins";
 }
 
+html {
+  scroll-behavior: smooth;
+}
 
 body{
   overflow-x: hidden;
@@ -16,17 +19,16 @@ body{
   margin-top: 15px;
 }
 
-.logo img{
-  width: 30%;
-  height: 80%;
+.front img{
+  width: 12%;
+  height: 120px;
   margin-top: -15px;
 }
 
 .navbar{
   display: flex;
-  margin-top: 20px;
-  margin-left: -180px;
-
+  margin-top: 30px;
+  margin-left: 80px;
 }
 
 .navbar li{
@@ -40,8 +42,9 @@ body{
 }
 
 .contact-us{
-  margin-top: 20px;
-  margin-right: 80px;
+  margin-top: 30px;
+  margin-left: 0;
+  margin-right: 120px;
 }
 
 .contact-us a{
@@ -51,4 +54,314 @@ body{
   color: white;
   border-radius: 20px;
   padding: 5px 10px;
+}
+
+.bg{
+  background-color: black;
+}
+
+
+/* General styling for the horse image */
+.horse {
+  position: relative; /* This allows for positioning of the shadow or pseudo-element */
+  width: 100%; /* You can adjust this based on your needs */
+  height: auto;
+  margin-top: 5px;
+}
+
+
+.travel{
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 10%;
+}
+
+.travel h5{
+  font-size: 1.5rem;
+  color: #CAFFC0;
+}
+
+.travel h3{
+  font-size: 2.5rem;
+}
+
+.line-container {
+  display: flex; /* Align elements horizontally */
+}
+
+
+/* Style for the line before "Sonic Travels" */
+.line {
+  width: 130px; /* Length of the line */
+  height: 3.5px; /* Thickness of the line */
+  background-color: #CAFFC0; /* Color of the line (black) */
+  margin-right: 10px; /* Space between the line and the heading */
+  margin-top: 16px;
+}
+
+
+.read-more {
+  font-size: 1.2rem;
+  color: white; /* Text color */
+  text-decoration: none; /* Remove underline */
+  position: relative;
+  display: inline-block;
+  margin-top: 20px;
+}
+
+/* Adding the down arrow after the "Read more" link */
+.read-more::after {
+  content: '↓'; /* Down arrow symbol */
+  font-size: 1.5rem; /* Size of the arrow */
+  margin-left: 10px; /* Space between the text and the arrow */
+  vertical-align: middle; /* Align the arrow with the text */
+}
+
+/* Positioning and styling for the Follow Us container */
+.follow-us {
+  position: fixed;  /* Fixes it in place while scrolling */
+  top: 80%; /* You can adjust this value to position it vertically */
+  right: 10px; /* Position it on the left side, adjust as needed */
+  transform: translateY(-50%); /* Center it vertically */
+  padding: 10px;
+  border-radius: 10px; /* Optional: Rounded corners */
+  z-index: 10; /* Make sure it's above other content */
+}
+
+/* Make the Follow Us section appear vertically */
+.follow-us h3 {
+  writing-mode: vertical-rl; /* Rotates text to appear vertically */
+  text-align: center;
+  margin: 0;
+  padding-bottom: 5px;
+  color: #44FF00;
+  font-size: 1rem;
+}
+
+.follow-us img {
+  display: block;
+  margin-bottom: 10px;
+  width: 30px; /* Adjust the size of the icons */
+  height: 30px;
+}
+
+#down{
+  position: relative;
+  top: -140px;
+  background-color: black;
+  box-shadow: 0 -89px 60px 20px rgba(0, 0, 0, 1.5); /* Adjust values as needed */
+}
+
+.price-guarantee{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.price-guarantee img{
+  width: 25%;
+  height: 380px;
+}
+
+
+.description1{
+  max-width: 50%;
+  margin-top: -180px;
+}
+
+.description1 p{
+  color: white;
+  margin-top: -30px;
+}
+
+/* General styling for the h1 */
+h1 {
+  position: relative;
+  font-size: 8rem; /* Adjust size as needed */
+  display: inline-block;
+  color: rgba(255, 255, 255, 0.4); /* Set color with transparency */
+}
+
+/* Styling for the span */
+h1 span {
+  position: relative;
+ vertical-align: middle;
+  padding-left: 40px; /* Space to the left of the span */
+  font-size: 2rem;
+  color: white;
+  opacity: 1;
+}
+
+/* Optional: Creating an overlap effect with the number "01" */
+h1::before {
+  content: ''; /* Empty content for the line before "01" */
+  position: absolute;
+  left: 95px;
+  bottom: 5.5rem; /* Position the line at the bottom of the h1 */
+  width: 100px; /* Width of the line overlapping "01" */
+  height: 4px; /* Height of the line */
+  background-color: #44FF00;
+}
+
+.description{
+  max-width: 50%;
+  margin-top: 50px;
+}
+
+.description p{
+  color: white;
+  margin-top: -30px;
+}
+
+img[alt="MOUNTAIN IMAGE"]{
+  margin-top: -200px;
+}
+
+img[alt="TRAVEL-LOVE ICON"]{
+  display: inline-block; /* Make the image inline with the text */
+  width: 40px; /* Adjust image size */
+  height: 40px; /* Adjust image size */
+  margin-right: -40px;
+}
+
+img[alt="PRICE ICON"], img[alt="AGENT ICON"]{
+  display: inline-block; /* Make the image inline with the text */
+  width: 40px; /* Adjust image size */
+  height: 40px; /* Adjust image size */
+}
+
+#travel-love span{
+  padding-right: 80px;
+}
+
+#travel-love::before {
+  content: ''; /* Empty content for the line before "01" */
+  position: absolute;
+  left: 330px;
+  bottom: 5.5rem; /* Position the line at the bottom of the h1 */
+  width: 120px; /* Width of the line overlapping "01" */
+  height: 4px; /* Height of the line */
+  background-color: #44FF00;
+}
+
+#agent::before {
+  content: ''; /* Empty content for the line before "01" */
+  position: absolute;
+  left: 90px;
+  bottom: 5.8rem; /* Position the line at the bottom of the h1 */
+  width: 130px; /* Width of the line overlapping "01" */
+  height: 4px; /* Height of the line */
+}
+
+.dedicate{
+  display: flex;
+}
+
+.dedicate img{
+  width: 25%;
+  height: 380px;
+  margin-left: 100px;
+}
+
+.description2 p{
+  color: white;
+  margin-top: -30px;
+  max-width: 80%;
+  margin-left: 0px;
+}
+
+#support span{
+  padding-right: 130px;
+}
+
+img[alt="SUPPORT ICON"]{
+  display: inline-block; /* Make the image inline with the text */
+  width: 40px; /* Adjust image size */
+  height: 40px; /* Adjust image size */
+  margin-right: -40px;
+  margin-left: 0;
+}
+
+#support::before {
+  content: ''; /* Empty content for the line before "01" */
+  position: absolute;
+  left: 425px;
+  bottom: 5.5rem; /* Position the line at the bottom of the h1 */
+  width: 120px; /* Width of the line overlapping "01" */
+  height: 4px; /* Height of the line */
+}
+
+.contact{
+  text-align: center;
+  color: white;
+  padding-top: 30px;
+}
+
+.information{
+  display: flex;
+  margin-top: 40px;
+}
+
+.connect{
+background-color: black;
+padding-bottom: 80px;
+}
+
+.logo1{
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+  background-color: #F7F7F7;
+  box-shadow: 0 -10px 15px rgba(0, 0, 0, 0.2);
+}
+
+.logo1 img{
+  width: 30%;
+  height: 250px;
+}
+
+.icons{
+  background-color: #3F4346;
+  margin-left: 20px;
+  padding: 16px;
+}
+
+.icons a{
+  margin-left: 20px;
+}
+
+.icons img{
+  width: 35px;
+  height: 35px;
+}
+
+input::placeholder {
+  color: white;
+}
+
+.email-section input{
+  background-color: #3F4346;
+  padding: 25px;
+  font-size: 1rem;
+  width: 150%;
+  margin-left: 5px;
+  color: white;
+}
+
+.message input{
+  background-color: #1E2126;
+  padding: 25px;
+  font-size: 1rem;
+  width: 130%;
+  margin-left: 140px;
+}
+
+.btn button{
+  border: 2px solid white;
+  padding: 18px;
+  font-size: 1.5rem;
+  background-color: black;
+  color: white;
+  margin-left: 265px;
+  cursor: pointer;
 }

@@ -16,17 +16,16 @@ body{
   margin-top: 15px;
 }
 
-.logo img{
-  width: 30%;
-  height: 80%;
+.front img{
+  width: 12%;
+  height: 120px;
   margin-top: -15px;
 }
 
 .navbar{
   display: flex;
-  margin-top: 20px;
-  margin-left: -180px;
-
+  margin-top: 30px;
+  margin-left: 80px;
 }
 
 .navbar li{
@@ -40,8 +39,9 @@ body{
 }
 
 .contact-us{
-  margin-top: 20px;
-  margin-right: 80px;
+  margin-top: 30px;
+  margin-left: 0;
+  margin-right: 120px;
 }
 
 .contact-us a{

@@ -5,29 +5,27 @@
   font-family: "Poppins";
 }
 
+
 body{
   overflow-x: hidden;
 }
-
 
 .front{
   display: flex;
   justify-content: space-between;
   margin-top: 15px;
-  margin-bottom: -40px;
 }
 
-.logo img{
-  width: 30%;
-  height: 80%;
+.front img{
+  width: 12%;
+  height: 120px;
   margin-top: -15px;
 }
 
 .navbar{
   display: flex;
-  margin-top: 20px;
-  margin-left: -180px;
-
+  margin-top: 30px;
+  margin-left: 80px;
 }
 
 .navbar li{
@@ -41,8 +39,9 @@ body{
 }
 
 .contact-us{
-  margin-top: 20px;
-  margin-right: 80px;
+  margin-top: 30px;
+  margin-left: 0;
+  margin-right: 120px;
 }
 
 .contact-us a{
@@ -54,9 +53,10 @@ body{
   padding: 5px 10px;
 }
 
+
 main{
   background-color: black;
-
+  padding-bottom: 80px;
 }
 
 .service{
@@ -153,42 +153,47 @@ main{
 .image-item h3 {
   font-size: 1.5rem;
   color: white;
-  margin-bottom: 100px; 
   background-color: #282828;
   padding: 10px;
   width: 105%;
   margin-top: -5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
+
+/* Paragraph text under the heading */
 .ticket-text {
-  position: absolute;
-  top: -20%; /* Position the text at the top of the image */
+  color: white;
+  background-color: #282828;
+  padding: 10px;
+  position: absolute; /* Position it inside the image container */
+  top: 10%; /* Center it vertically */
   left: 0;
-  width: 100%; /* Ensure it takes full width */
-  height: 100%; /* Ensure it takes full height of the image */
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  width: 100%;
+  z-index: 2; /* Make sure it sits on top of the image */
   opacity: 0; /* Initially hidden */
   visibility: hidden; /* Initially hidden */
-  transition: opacity 0.3s ease, visibility 0s 0s; /* Smooth transition */
-  text-align: center;
-  padding: 20px;
-  font-size: 1rem;
-  z-index: 2; /* Ensure text is above the image */  
-  color: white;
+  transition: opacity 0.3s ease, visibility 0s 0.3s; /* Smooth opacity change */
 }
 
-/* Hover effects */
+/* Hover effect: Hide the image and show the text in place */
 .image-item:hover .main-image img {
-  opacity: 0; /* Hide the image on hover */
+  opacity: 0; /* Hide the image */
 }
 
+.image-item:hover h3,
 .image-item:hover .ticket-text {
-  opacity: 1; /* Show the ticket text on hover */
-  visibility: visible; /* Make the ticket text visible */
-  transition: opacity 0.3s ease, visibility 0s 0s; /* Ensure smooth transition */
+  opacity: 1; /* Make the text visible */
+  visibility: visible; /* Make the text visible */
+  background-color: white; /* White background on hover */
+  color: black; /* Black text on hover */
 }
+
+.image-item:hover .square {
+  opacity: 0; /* Optionally hide the icon on hover */
+}
+
+
 
 .contact{
   text-align: center;
