@@ -161,6 +161,11 @@ body{
 .price-guarantee img{
   width: 25%;
   height: 380px;
+  transition: transform 0.3s ease;  /* Smooth transition for the zoom effect */
+}
+
+.price-guarantee img:hover {
+  transform: scale(1.1); /* Zoom in by 20% on hover */
 }
 
 
@@ -221,8 +226,9 @@ img[alt="TRAVEL-LOVE ICON"]{
   display: inline-block; /* Make the image inline with the text */
   width: 40px; /* Adjust image size */
   height: 40px; /* Adjust image size */
-  margin-right: -40px;
+  margin-right: -40px; 
 }
+
 
 img[alt="PRICE ICON"], img[alt="AGENT ICON"]{
   display: inline-block; /* Make the image inline with the text */
@@ -261,31 +267,42 @@ img[alt="PRICE ICON"], img[alt="AGENT ICON"]{
   width: 25%;
   height: 380px;
   margin-left: 100px;
+  transition: transform 0.3s ease; 
+}
+
+.dedicate img:hover {
+  transform: scale(1.1); /* Zoom in by 20% on hover */
+}
+
+.description2{
+  margin-top: 50px;
 }
 
 .description2 p{
   color: white;
   margin-top: -30px;
   max-width: 80%;
-  margin-left: 0px;
+  margin-left: 80px;
 }
 
 #support span{
-  padding-right: 130px;
+  padding-right: 80px;
+  padding-left: 0;
 }
 
 img[alt="SUPPORT ICON"]{
   display: inline-block; /* Make the image inline with the text */
-  width: 40px; /* Adjust image size */
+  width: 140px; /* Adjust image size */
   height: 40px; /* Adjust image size */
-  margin-right: -40px;
-  margin-left: 0;
+  margin-right: 10px;
+  margin-left: 0px;
+  padding-left: 100px;
 }
 
 #support::before {
   content: ''; /* Empty content for the line before "01" */
   position: absolute;
-  left: 425px;
+  left: 380px;
   bottom: 5.5rem; /* Position the line at the bottom of the h1 */
   width: 120px; /* Width of the line overlapping "01" */
   height: 4px; /* Height of the line */

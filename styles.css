@@ -126,14 +126,20 @@ body{
   border-radius: 50%;
   overflow: hidden;
   background-color: white;
-  border: 3px solid white; /* Optional: adds a border around the circle */
+  transition: background-color 0.3s ease; /* For smooth background transition */
 }
+
+.circle-overlay:hover{
+  background-color: #DBFFD4;
+}
+
 
 .circle-img {
   width: 100%;
   height: 100%;
   object-fit: cover; /* Ensure the circle image is fully contained within the circle */
   padding: 10px;
+  z-index: 1;
 }
 
 /* Heading text under the large image */
@@ -148,9 +154,6 @@ h4 {
   display: flex;
 }
 
-.numbers{
-  display: flex;
-}
 
 .sonic-journey img{
   width: 50%;
@@ -160,13 +163,18 @@ h4 {
 }
 
 .journey-content h4{
-  font-size: 1.3rem;
+  font-size: 1.8rem;
   color: #008515;
   margin-bottom: 0px;
+  margin-top: 40px;
 }
 
 .journey-content p{
-  font-size: 1.3rem;
+  font-size: 1.2rem;
+}
+
+.numbers{
+  display: flex;
 }
 
 .numbers{
@@ -188,6 +196,27 @@ h4 {
   text-align: center;
   padding: 15px 50px;
   margin-left: 15px;
+  position: relative; /* Required for pseudo-element positioning */
+  overflow: hidden;  /* To hide the background animation effect */
+  transition: color 0.3s ease;  /* Smooth text color transition */
+  z-index: 1;
+}
+
+.our-exp:before, .certificate:before, .year-exp:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: #FFB1B1; 
+  transition: left 0.9s ease;  
+  z-index: -1;
+}
+
+
+.our-exp:hover:before, .certificate:hover:before, .year-exp:hover:before {
+  left: 0; /* Slide the background from left to right */
 }
 
 .best-features{

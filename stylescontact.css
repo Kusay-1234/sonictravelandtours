@@ -94,6 +94,11 @@ body{
 .phone, .email, .address{
   display: flex;
   padding-bottom: 30px;
+  transition: transform 0.3s ease;  /* Smooth transition for the zoom effect */
+}
+
+.phone:hover, .email:hover, .address:hover{
+  transform: scale(1.1); /* Zoom in by 20% on hover */
 }
 
 .get-in{
@@ -133,6 +138,13 @@ body{
 .icon{
   display: flex;
   gap: 20px;
+}
+.icon .circle-overlay{
+  transition: transform 0.3s ease;  /* Smooth transition for the zoom effect */
+}
+
+.icon .circle-overlay:hover{
+  transform: scale(1.1); /* Zoom in by 20% on hover */
 }
 
 .info{
@@ -181,11 +193,16 @@ input[type="text"]:focus {
   border: none;
   margin-top: 30px;
   cursor: pointer;
-  background-color: #FF7100;
+  background-color: #008736;
   padding: 8px 50px; 
   border-radius: 40px;
   font-size: 1.5rem;
   color: white;
+  transition: background-color 0.3s ease; /* For smooth background transition */
+}
+
+.form button:hover{
+  background-color: #B4B4B4;
 }
 
 .bg3{
