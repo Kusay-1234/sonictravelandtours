@@ -60,20 +60,19 @@ main{
 }
 
 .service{
-  display: flex;
+  position: relative;
 }
 
 .service img{
-  width: 90%;
-  height: 600px;
-  margin-left: -220px;
-  margin-top: 70px;
+  width: 100%;
+  margin-top: 100px;
+  margin-left: 250px
 }
 
 .service-content{
-  margin-top: 140px;
-  position: relative;
-  left: 9.5%;
+  position: absolute;
+  bottom: 210px;
+  left: 5%;
 }
 
 .service-content h2{
@@ -87,10 +86,12 @@ main{
   font-weight: normal;
   margin-top: -65px;
 }
+
 .service-content p{
   color: white;
   font-size: 1rem;
   padding-top: 0px;
+  max-width: 50%;
 }
 
 .get-in a{
@@ -124,13 +125,14 @@ main{
   position: relative;
   width: 105%;
   overflow: hidden; /* Ensure the circle image is clipped to the boundaries */
-  transition: opacity 0.3s ease;
+  transition: transform 0.3s ease; /* Smooth transition for hiding the image */
 }
 
 .main-image img {
   width: 100%;
   height: 100%;
   object-fit: cover; /* Ensure the image covers the container */
+  transition: opacity 0.3s ease; /* Fade out the image */
 }
 
 .square{
@@ -157,7 +159,11 @@ main{
   padding: 10px;
   width: 105%;
   margin-top: -5px;
-  transition: background-color 0.3s ease, color 0.3s ease;
+  position: absolute;
+  bottom: 8px; /* Initially placed at the bottom */
+  left: 0;
+  transform: translateY(100%); /* Start below the container */
+  transition: transform 0.4s ease; /* Animate sliding up when hovered */
 }
 
 
@@ -166,33 +172,33 @@ main{
   color: white;
   background-color: #282828;
   padding: 10px;
-  position: absolute; /* Position it inside the image container */
-  top: 10%; /* Center it vertically */
-  left: 0;
-  width: 100%;
-  z-index: 2; /* Make sure it sits on top of the image */
-  opacity: 0; /* Initially hidden */
-  visibility: hidden; /* Initially hidden */
-  transition: opacity 0.3s ease, visibility 0s 0.3s; /* Smooth opacity change */
+  position: absolute;
+  bottom: 0; /* Positioned below the heading */
+  left: 6px;
+  width: 105%;
+  height: 100%;
+  transition: transform 0.8s ease; /* Animate sliding up when hovered */
+  opacity: 0; /* Make text invisible initially */ 
+  font-size: 1.1rem;
 }
 
-/* Hover effect: Hide the image and show the text in place */
+
+/* Hover effect: Hide the image and slide in the heading and text */
 .image-item:hover .main-image img {
-  opacity: 0; /* Hide the image */
+  opacity: 0; /* Fade out the image */
 }
 
-.image-item:hover h3,
+.image-item:hover h3 {
+  transform: translateY(-400%); /* Slide the heading up */
+}
+
 .image-item:hover .ticket-text {
-  opacity: 1; /* Make the text visible */
-  visibility: visible; /* Make the text visible */
-  background-color: white; /* White background on hover */
-  color: black; /* Black text on hover */
+  transform: translateY(19.3%); /* Slide the text up */
+  opacity: 1; /* Make text visible */
+  max-width: 100%;
+  background-color: white;
+  color: black;
 }
-
-.image-item:hover .square {
-  opacity: 0; /* Optionally hide the icon on hover */
-}
-
 
 
 .contact{

@@ -92,7 +92,7 @@ body{
 
 
 /* Style for the line before "Sonic Travels" */
-.line {
+.line-sonic{
   width: 130px; /* Length of the line */
   height: 3.5px; /* Thickness of the line */
   background-color: #CAFFC0; /* Color of the line (black) */
@@ -153,160 +153,185 @@ body{
   box-shadow: 0 -89px 60px 20px rgba(0, 0, 0, 1.5); /* Adjust values as needed */
 }
 
-.price-guarantee{
+/* Overall price guarantee section */
+.price-guarantee {
+  padding: 20px;
+}
+
+/* Flex container for the image and price details (includes description) */
+.price-container {
   display: flex;
-  justify-content: space-evenly;
+  align-items: flex-start; /* Align items to the top */
+  justify-content: space-between; /* Space between the large image and details */
 }
 
-.price-guarantee img{
-  width: 25%;
-  height: 380px;
-  transition: transform 0.3s ease;  /* Smooth transition for the zoom effect */
+/* Styling for the large image on the left */
+.large-image {
+  width: 40%; /* Large image takes up 40% of the container's width */
+  padding-right: 20px; /* Space between the image and text */
 }
 
-.price-guarantee img:hover {
-  transform: scale(1.1); /* Zoom in by 20% on hover */
+.large-image img {
+  width: 80%; /* Make the image fill the container */
+  height: auto; /* Maintain the image's aspect ratio */
 }
 
-
-.description1{
-  max-width: 50%;
-  margin-top: -180px;
-}
-
-.description1 p{
-  color: white;
-  margin-top: -30px;
-}
-
-/* General styling for the h1 */
-h1 {
-  position: relative;
-  font-size: 8rem; /* Adjust size as needed */
-  display: inline-block;
-  color: rgba(255, 255, 255, 0.4); /* Set color with transparency */
-}
-
-/* Styling for the span */
-h1 span {
-  position: relative;
- vertical-align: middle;
-  padding-left: 40px; /* Space to the left of the span */
-  font-size: 2rem;
-  color: white;
-  opacity: 1;
-}
-
-/* Optional: Creating an overlap effect with the number "01" */
-h1::before {
-  content: ''; /* Empty content for the line before "01" */
-  position: absolute;
-  left: 95px;
-  bottom: 5.5rem; /* Position the line at the bottom of the h1 */
-  width: 100px; /* Width of the line overlapping "01" */
-  height: 4px; /* Height of the line */
-  background-color: #44FF00;
-}
-
-.description{
-  max-width: 50%;
-  margin-top: 50px;
-}
-
-.description p{
-  color: white;
-  margin-top: -30px;
-}
-
-img[alt="MOUNTAIN IMAGE"]{
-  margin-top: -200px;
-}
-
-img[alt="TRAVEL-LOVE ICON"]{
-  display: inline-block; /* Make the image inline with the text */
-  width: 40px; /* Adjust image size */
-  height: 40px; /* Adjust image size */
-  margin-right: -40px; 
-}
-
-
-img[alt="PRICE ICON"], img[alt="AGENT ICON"]{
-  display: inline-block; /* Make the image inline with the text */
-  width: 40px; /* Adjust image size */
-  height: 40px; /* Adjust image size */
-}
-
-#travel-love span{
-  padding-right: 80px;
-}
-
-#travel-love::before {
-  content: ''; /* Empty content for the line before "01" */
-  position: absolute;
-  left: 330px;
-  bottom: 5.5rem; /* Position the line at the bottom of the h1 */
-  width: 120px; /* Width of the line overlapping "01" */
-  height: 4px; /* Height of the line */
-  background-color: #44FF00;
-}
-
-#agent::before {
-  content: ''; /* Empty content for the line before "01" */
-  position: absolute;
-  left: 90px;
-  bottom: 5.8rem; /* Position the line at the bottom of the h1 */
-  width: 130px; /* Width of the line overlapping "01" */
-  height: 4px; /* Height of the line */
-}
-
-.dedicate{
+/* Styling for the price details (elements + description) on the right */
+.price-details {
   display: flex;
+  flex-direction: column; /* Stack elements vertically in the container */
+  width: 55%; /* Take up 55% of the container's width */
+  margin-left: 30px;
 }
 
-.dedicate img{
-  width: 25%;
-  height: 380px;
-  margin-left: 100px;
-  transition: transform 0.3s ease; 
+/* Flex container for "01", line, "Best Price Guarantee", and icon */
+.price-elements {
+  display: flex;
+  align-items: center; /* Vertically align the items */
+  justify-content: flex-start; /* Align to the left */
+  margin-bottom: 20px; /* Add space between the elements and the description */
+  position: relative;
 }
 
-.dedicate img:hover {
-  transform: scale(1.1); /* Zoom in by 20% on hover */
+/* Styling for the "01" number */
+.price-number {
+  font-size: 7rem; /* Large number size */
+  color: rgba(255, 255, 255, 0.4); 
+  margin-right: 50px; /* Space between "01" and the line */
+  position: relative; /* So the line can be positioned above it */
 }
 
-.description2{
-  margin-top: 50px;
+/* Green line under the "01" */
+.line {
+  position: absolute;
+  top: 82px;
+  width: 125px;
+  height: 4px;
+  background-color: #44FF00; /* Green line */
+  left: 35px; /* Ensure the line is aligned with the "01" */
 }
 
-.description2 p{
+/* Styling for the "Best Price Guarantee" text */
+.price-text {
+  font-size: 1.5rem;
   color: white;
+  margin-right: 10px; /* Space between the text and the icon */
+}
+
+
+/* Styling for the icon */
+.price-icon img {
+  width: 50px;
+  height: 50px;
+}
+
+/* Description paragraph under the four elements */
+.price-description {
+  font-size: 1.2rem;
+  color: white;
+  line-height: 1.6;
+  text-align: left; /* Left-align the description text */
   margin-top: -30px;
-  max-width: 80%;
-  margin-left: 80px;
 }
 
-#support span{
-  padding-right: 80px;
-  padding-left: 0;
+/* Styling for the large image on the left */
+.large-image1 {
+  width: 40%; /* Large image takes up 40% of the container's width */
+  padding-right: 20px; /* Space between the image and text */
+  margin-left: 70px;
 }
 
-img[alt="SUPPORT ICON"]{
-  display: inline-block; /* Make the image inline with the text */
-  width: 140px; /* Adjust image size */
-  height: 40px; /* Adjust image size */
-  margin-right: 10px;
+.large-image1 img {
+  width: 80%; /* Make the image fill the container */
+  height: auto; /* Maintain the image's aspect ratio */
+}
+
+/* Styling for the price details (elements + description) on the right */
+.price-details1 {
+  display: flex;
+  flex-direction: column; /* Stack elements vertically in the container */
+  width: 55%; /* Take up 55% of the container's width */
   margin-left: 0px;
-  padding-left: 100px;
+  margin-top: 50px;
 }
 
-#support::before {
-  content: ''; /* Empty content for the line before "01" */
-  position: absolute;
-  left: 380px;
-  bottom: 5.5rem; /* Position the line at the bottom of the h1 */
-  width: 120px; /* Width of the line overlapping "01" */
-  height: 4px; /* Height of the line */
+/* Styling for the "01" number */
+.price-number1 {
+  font-size: 7rem; /* Large number size */
+  color: rgba(255, 255, 255, 0.4); 
+  margin-left: 90px;
+  position: relative; /* So the line can be positioned above it */
 }
+
+/* Green line under the "01" */
+.line1 {
+  position: absolute;
+  top: 82px;
+  width: 125px;
+  height: 4px;
+  background-color: #44FF00; /* Green line */
+  left: 270px; /* Ensure the line is aligned with the "01" */
+}
+
+
+/* Green line under the "01" */
+.line2 {
+  position: absolute;
+  top: 82px;
+  width: 150px;
+  height: 4px;
+  background-color: #44FF00; /* Green line */
+  left: 35px; /* Ensure the line is aligned with the "01" */
+}
+
+/* Flex container for the image and price details (includes description) */
+.price-container2 {
+  display: flex;
+  align-items: flex-start; /* Align items to the top */
+  justify-content: space-between; /* Space between the large image and details */
+  margin-top: 80px;
+}
+
+
+/* Styling for the large image on the left */
+.large-image3 {
+  width: 40%; /* Large image takes up 40% of the container's width */
+  padding-right: 20px; /* Space between the image and text */
+  margin-left: 70px;
+}
+
+.large-image3 img {
+  width: 80%; /* Make the image fill the container */
+  height: auto; /* Maintain the image's aspect ratio */
+}
+
+/* Styling for the price details (elements + description) on the right */
+.price-details3 {
+  display: flex;
+  flex-direction: column; /* Stack elements vertically in the container */
+  width: 55%; /* Take up 55% of the container's width */
+  margin-left: 0px;
+  margin-top: 50px;
+}
+
+/* Styling for the "01" number */
+.price-number3 {
+  font-size: 7rem; /* Large number size */
+  color: rgba(255, 255, 255, 0.4); 
+  margin-left: 90px;
+  position: relative; /* So the line can be positioned above it */
+}
+
+/* Green line under the "01" */
+.line3 {
+  position: absolute;
+  top: 82px;
+  width: 125px;
+  height: 4px;
+  background-color: #44FF00; /* Green line */
+  left: 340px; /* Ensure the line is aligned with the "01" */
+}
+
 
 .contact{
   text-align: center;
@@ -382,3 +407,124 @@ input::placeholder {
   margin-left: 265px;
   cursor: pointer;
 }
+
+
+
+
+@media only screen and (max-width:480px){
+  .travel{
+    top: 27%;
+    left: 5%;
+  }
+
+  .line-sonic{
+    margin-top: 10px;
+  }
+
+  .travel h5{
+    font-size: 1rem;
+  }
+
+  .travel h3{
+    font-size: 1.2rem;
+  }
+
+  .read-more{
+    font-size: 1rem;
+    margin-top: 0;
+  }
+
+  .follow-us{
+    padding: 0;
+    right: 4px;
+  }
+
+  #down{
+    top: 35px;
+  }
+
+
+  #down {
+    margin-top: -25px;
+  }
+
+    /* Overall price guarantee section */
+    .price-guarantee {
+      padding: 10px;
+    }
+  
+  
+    /* Styling for the large image on the left */
+    .large-image,
+    .large-image1,
+    .large-image3 {
+      width: 80%; /* Increase width to make the image bigger on small screens */
+      margin-bottom: 20px; /* Add some space between the image and text */
+    }
+  
+    .large-image img,
+    .large-image1 img,
+    .large-image3 img {
+      width: 100%; /* Make the image fill the container */
+      height: auto; /* Maintain the image's aspect ratio */
+    }
+  
+    /* Styling for the price details (elements + description) on the right */
+    .price-details,
+    .price-details1,
+    .price-details3 {
+      width: 100%; /* Take up the full width of the container */
+      margin-left: 0;
+      margin-top: 20px; /* Add top margin for spacing */
+    }
+  
+    /* Flex container for the "01", line, "Best Price Guarantee", and icon */
+    .price-elements {
+      align-items: center; /* Center the content */
+      text-align: center; /* Center the text */
+    }
+  
+    /* Styling for the "01" number */
+    .price-number,
+    .price-number1,
+    .price-number3 {
+      font-size: 3rem; /* Reduce the font size of the number */
+      margin-bottom: 10px; /* Add space below the number */
+    }
+  
+    /* Green line under the "01" */
+    .line,
+    .line1,
+    .line2,
+    .line3 {
+      width: 50px; /* Reduce line width for small screens */
+      left: 38px; /* Center-align the line */
+      transform: translateX(-50%); /* Center the line */
+      height: 3px;
+      top: 30%;
+    }
+  
+    /* Styling for the "Best Price Guarantee" text and others */
+    .price-text {
+      font-size: 0.7rem; /* Smaller font size for small screens */
+      margin-bottom: 10px; /* Add some space below the text */
+      margin-left: -33px;
+    }
+  
+    /* Styling for the icon */
+    .price-icon img {
+      width: 25px;
+      height: 25px; /* Reduce icon size for small screens */
+      margin-bottom: 10px; /* Add space below the icon */
+      margin-left: -6px;
+    }
+  
+    /* Description paragraph */
+    .price-description {
+      font-size: 0.7rem; /* Smaller font size */
+      line-height: 1.4;
+      text-align: center; /* Center-align the description text */
+      margin-top: -40px; /* Add some space above the description */
+    }
+  }
+  
