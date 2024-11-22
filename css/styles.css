@@ -1,0 +1,491 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins";
+}
+
+
+body{
+  overflow-x: hidden;
+}
+
+.front{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.front img{
+  width: 12%;
+  height: 120px;
+  margin-top: -15px;
+}
+
+.navbar{
+  display: flex;
+  margin-top: 30px;
+  margin-left: 80px;
+}
+
+.navbar li{
+  list-style: none;
+}
+
+.navbar li a{
+  text-decoration: none;
+  color: black;
+  margin-left: 50px;
+}
+
+.contact-us{
+  margin-top: 30px;
+  margin-left: 0;
+  margin-right: 120px;
+}
+
+.contact-us a{
+  text-decoration: none;
+  color: black;
+  background-color: #008515;
+  color: white;
+  border-radius: 20px;
+  padding: 5px 10px;
+}
+
+video {
+  width: 100%;
+  height: auto;
+}
+
+.gradient{
+  background: linear-gradient(to bottom, #CDCDCD, #676767);
+
+}
+
+.plan-trip{
+  display: flex;
+  justify-content: space-between;
+}
+
+.plan{
+  margin-left: 50px;
+  margin-top: 40px;
+}
+
+.plan-trip img{
+  width: 25%;
+  margin-right: -50px;
+  margin-top: -60px;
+  position: relative;
+}
+
+.plan-trip p{
+  font-size: 1.5rem;
+  color: #008515;
+  font-family: "Kaushan Script", cursive;
+}
+
+.plan-trip h5{
+  font-size: 2rem;
+  color: white;
+}
+
+/* Container for the perfect holiday images */
+.perfect-holiday {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+  margin-top: -100px;
+}
+
+/* Individual image item */
+.image-item {
+  position: relative;
+  width: 250px;
+  text-align: center;
+}
+
+/* The main large image */
+.main-image {
+  position: relative;
+  width: 100%;
+  overflow: hidden; /* Ensure the circle image is clipped to the boundaries */
+  border-radius: 10px;
+}
+
+.main-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensure the image covers the container */
+}
+
+/* Circle overlay image */
+.circle-overlay {
+  position: absolute;
+  top: 88%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60px; /* Adjust the size of the circle image */
+  height: 60px; /* Adjust the size of the circle image */
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: white;
+  transition: background-color 0.3s ease; /* For smooth background transition */
+}
+
+.circle-overlay:hover{
+  background-color: #DBFFD4;
+}
+
+
+.circle-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensure the circle image is fully contained within the circle */
+  padding: 10px;
+  z-index: 1;
+}
+
+/* Heading text under the large image */
+h4 {
+  margin-top: 10px;
+  font-size: 1.5rem;
+  color: white;
+  margin-bottom: 40px;
+}
+
+.sonic-journey{
+  display: flex;
+}
+
+
+.sonic-journey img{
+  width: 50%;
+}
+.journey-content{
+  margin-top: 80px;
+}
+
+.journey-content h4{
+  font-size: 1.8rem;
+  color: #008515;
+  margin-bottom: 0px;
+  margin-top: 40px;
+}
+
+.journey-content p{
+  font-size: 1.2rem;
+}
+
+.numbers{
+  display: flex;
+}
+
+.numbers{
+  margin-top: 50px;
+  margin-left: -40px;
+}
+
+.numbers h3{
+  font-size: 2rem;
+}
+
+.numbers p{
+  font-size: 0.8rem;
+}
+
+.our-exp, .certificate, .year-exp{
+  border-radius: 20px;
+  background-color: #D9D9D9;
+  text-align: center;
+  padding: 15px 50px;
+  margin-left: 15px;
+  position: relative; /* Required for pseudo-element positioning */
+  overflow: hidden;  /* To hide the background animation effect */
+  transition: color 0.3s ease;  /* Smooth text color transition */
+  z-index: 1;
+}
+
+.our-exp:before, .certificate:before, .year-exp:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: #FFB1B1; 
+  transition: left 0.9s ease;  
+  z-index: -1;
+}
+
+
+.our-exp:hover:before, .certificate:hover:before, .year-exp:hover:before {
+  left: 0; /* Slide the background from left to right */
+}
+
+.best-features{
+  display: flex;
+}
+
+.what-features{
+  display: flex;
+}
+
+.what-we-give{
+  margin-left: 40px;
+  margin-right: 50px;
+}
+
+.what-we-give h3{
+  font-size: 2rem;
+}
+
+.what-we-give h5{
+  font-size: 1.3rem;
+}
+
+.what-we-give p{
+  font-size: 0.7rem;
+}
+
+/* Style the paragraph */
+.with-arrow {
+  display: inline-flex;
+  align-items: center;
+  position: relative;
+  color: #008515;
+  font-size: 1rem !important;
+  font-weight: bold;
+}
+
+
+/* Add the arrow after the line */
+.with-arrow::before {
+  content: "→"; /* Unicode arrow character */
+  font-size: 1.8em;
+  margin-left: 10px; /* Adjust the space between the line and the arrow */
+  position: absolute;
+  right: -40px; /* Position the arrow to the right of the line */
+  color: #008515;
+  font-weight: bold;
+}
+
+.what-features{
+  margin-top: 40px;
+}
+
+.square{
+  width: 50px;
+  height: 50px;
+  border-radius: 5px;
+  background-color: lightgreen;
+}
+
+.square img{
+  padding: 5px;
+}
+
+.choices p, .guidance p, .booking p{
+  font-size: 0.6rem;
+}
+
+.choices h3, .guidance h3, .booking h3{
+  font-size: 1rem;
+  margin-bottom: 5px;
+}
+
+.guidance{
+  margin-left: 35px;
+  margin-right: 35px;
+}
+
+.contact{
+  text-align: center;
+  color: white;
+  padding-top: 30px;
+}
+
+.information{
+  display: flex;
+  margin-top: 40px;
+}
+
+.connect{
+background-color: black;
+padding-bottom: 80px;
+}
+
+.logo1{
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+  background-color: #F7F7F7;
+  box-shadow: 0 -10px 15px rgba(0, 0, 0, 0.2);
+}
+
+.logo1 img{
+  width: 30%;
+  height: 250px;
+}
+
+.icons{
+  background-color: #3F4346;
+  margin-left: 20px;
+  padding: 16px;
+}
+
+.icons a{
+  margin-left: 20px;
+}
+
+.icons img{
+  width: 35px;
+  height: 35px;
+}
+
+input::placeholder {
+  color: white;
+}
+
+.email-section input{
+  background-color: #3F4346;
+  padding: 25px;
+  font-size: 1rem;
+  width: 150%;
+  margin-left: 5px;
+  color: white;
+}
+
+.message input{
+  background-color: #1E2126;
+  padding: 25px;
+  font-size: 1rem;
+  width: 130%;
+  margin-left: 140px;
+}
+
+.btn button{
+  border: 2px solid white;
+  padding: 18px;
+  font-size: 1.5rem;
+  background-color: black;
+  color: white;
+  margin-left: 265px;
+  cursor: pointer;
+}
+
+
+@media only screen and (max-width: 480px) {
+
+  body{
+    overflow-x: hidden;
+  }
+  
+    /* Make the plan-trip image smaller and align */
+    .plan-trip img {
+      width: 30%; /* Decrease width to fit on small screens */
+      margin-right: -16px;
+      margin-top: -30px;
+      position: static;
+    }
+
+    .plan {
+      margin-left: 10px;
+      margin-top: 0px;
+  }
+  
+    /* Adjust the text in .plan */
+    .plan p {
+      font-size: 1.2rem; /* Slightly smaller text */
+      margin-top: 15px;
+    }
+  
+    .plan h5 {
+      font-size: 1rem; /* Slightly smaller text */
+    }
+  
+    /* Adjust the perfect-holiday section */
+    .perfect-holiday {
+      margin-top: 0;
+    }
+  
+    /* Individual image item adjustments */
+    .image-item {
+      width: 45%; /* Adjust width for small screens */
+      margin-bottom: 20px;
+    }
+
+    .main-image {
+      position: relative;
+      width: 100%;
+      height: auto;
+      max-height: 120px; /* Set a max height instead of fixed height */
+      overflow: hidden;
+    }
+  
+    /* Adjusting the images in .main-image */
+    .main-image img {
+      height: 12%;
+      width: 90%;
+      object-fit: cover;
+    }
+  
+    /* Adjusting circle image size */
+    .circle-overlay {
+      width: 28px; /* Smaller circle size */
+      height: 28px;
+      top: 80%; /* Adjust position slightly */
+    }
+  
+    .circle-overlay img {
+      padding: 0;
+      width: 18px;
+      height: 18px;
+    }
+  
+    h4 {
+      font-size: 0.8rem;
+      margin-top: 0px;
+      margin-bottom: 0;
+  }
+
+  .logo1 img {
+    width: 60%; /* Ensure logo is appropriately sized */
+    height: auto;
+  }
+
+  .information {
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center align elements */
+    margin-top: 20px;
+  }
+
+  .icons {
+    margin-left: 0;
+    padding: 5px;
+    width: 72%; /* Make icons responsive */
+    text-align: center; /* Center icons */
+  }
+
+  .icons a {
+    margin: 10px;
+  }
+
+  .email-section input,
+  .message input {
+    width: 100%; /* Make inputs take full width on small screens */
+    margin-left: 0;
+    padding: 10px;
+    font-size: 0.7rem;
+  }
+
+  .btn button {
+    width: 100%; /* Make button take full width */
+    padding: 5px;
+    font-size: 1rem;
+    margin-left: 8px;
+    margin-top: 10px;
+  }
+  
+}

@@ -1,0 +1,658 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins";
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body{
+  overflow-x: hidden;
+}
+
+.front{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.front img{
+  width: 12%;
+  height: 120px;
+  margin-top: -15px;
+}
+
+.navbar{
+  display: flex;
+  margin-top: 30px;
+  margin-left: 80px;
+}
+
+.navbar li{
+  list-style: none;
+}
+
+.navbar li a{
+  text-decoration: none;
+  color: black;
+  margin-left: 50px;
+}
+
+.contact-us{
+  margin-top: 30px;
+  margin-left: 0;
+  margin-right: 120px;
+}
+
+.contact-us a{
+  text-decoration: none;
+  color: black;
+  background-color: #008515;
+  color: white;
+  border-radius: 20px;
+  padding: 5px 10px;
+}
+
+.bg{
+  background-color: black;
+}
+
+
+/* General styling for the horse image */
+.horse {
+  position: relative; /* This allows for positioning of the shadow or pseudo-element */
+  width: 100%; /* You can adjust this based on your needs */
+  height: auto;
+  margin-top: 5px;
+}
+
+
+.travel{
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 10%;
+}
+
+.travel h5{
+  font-size: 1.5rem;
+  color: #CAFFC0;
+}
+
+.travel h3{
+  font-size: 2.5rem;
+}
+
+.line-container {
+  display: flex; /* Align elements horizontally */
+}
+
+
+/* Style for the line before "Sonic Travels" */
+.line-sonic{
+  width: 130px; /* Length of the line */
+  height: 3.5px; /* Thickness of the line */
+  background-color: #CAFFC0; /* Color of the line (black) */
+  margin-right: 10px; /* Space between the line and the heading */
+  margin-top: 16px;
+}
+
+
+.read-more {
+  font-size: 1.2rem;
+  color: white; /* Text color */
+  text-decoration: none; /* Remove underline */
+  position: relative;
+  display: inline-block;
+  margin-top: 20px;
+}
+
+/* Adding the down arrow after the "Read more" link */
+.read-more::after {
+  content: '↓'; /* Down arrow symbol */
+  font-size: 1.5rem; /* Size of the arrow */
+  margin-left: 10px; /* Space between the text and the arrow */
+  vertical-align: middle; /* Align the arrow with the text */
+}
+
+/* Positioning and styling for the Follow Us container */
+.follow-us {
+  position: fixed;  /* Fixes it in place while scrolling */
+  top: 80%; /* You can adjust this value to position it vertically */
+  right: 10px; /* Position it on the left side, adjust as needed */
+  transform: translateY(-50%); /* Center it vertically */
+  padding: 10px;
+  border-radius: 10px; /* Optional: Rounded corners */
+  z-index: 10; /* Make sure it's above other content */
+}
+
+/* Make the Follow Us section appear vertically */
+.follow-us h3 {
+  writing-mode: vertical-rl; /* Rotates text to appear vertically */
+  text-align: center;
+  margin: 0;
+  padding-bottom: 5px;
+  color: #44FF00;
+  font-size: 1rem;
+}
+
+.follow-us img {
+  display: block;
+  margin-bottom: 10px;
+  width: 30px; /* Adjust the size of the icons */
+  height: 30px;
+}
+
+#down{
+  position: relative;
+  top: -140px;
+  background-color: black;
+  box-shadow: 0 -89px 60px 20px rgba(0, 0, 0, 1.5); /* Adjust values as needed */
+}
+
+/* Overall price guarantee section */
+.price-guarantee {
+  padding: 20px;
+}
+
+/* Flex container for the image and price details (includes description) */
+.price-container {
+  display: flex;
+  align-items: flex-start; /* Align items to the top */
+  justify-content: space-between; /* Space between the large image and details */
+}
+
+/* Styling for the large image on the left */
+.large-image {
+  width: 40%; /* Large image takes up 40% of the container's width */
+  padding-right: 20px; /* Space between the image and text */
+}
+
+.large-image img {
+  width: 80%; /* Make the image fill the container */
+  height: auto; /* Maintain the image's aspect ratio */
+}
+
+/* Styling for the price details (elements + description) on the right */
+.price-details {
+  display: flex;
+  flex-direction: column; /* Stack elements vertically in the container */
+  width: 55%; /* Take up 55% of the container's width */
+  margin-left: 30px;
+}
+
+/* Flex container for "01", line, "Best Price Guarantee", and icon */
+.price-elements {
+  display: flex;
+  align-items: center; /* Vertically align the items */
+  justify-content: flex-start; /* Align to the left */
+  margin-bottom: 20px; /* Add space between the elements and the description */
+  position: relative;
+}
+
+/* Styling for the "01" number */
+.price-number {
+  font-size: 7rem; /* Large number size */
+  color: rgba(255, 255, 255, 0.4); 
+  margin-right: 50px; /* Space between "01" and the line */
+  position: relative; /* So the line can be positioned above it */
+}
+
+/* Green line under the "01" */
+.line {
+  position: absolute;
+  top: 82px;
+  width: 125px;
+  height: 4px;
+  background-color: #44FF00; /* Green line */
+  left: 35px; /* Ensure the line is aligned with the "01" */
+}
+
+/* Styling for the "Best Price Guarantee" text */
+.price-text {
+  font-size: 1.5rem;
+  color: white;
+  margin-right: 10px; /* Space between the text and the icon */
+}
+
+
+/* Styling for the icon */
+.price-icon img {
+  width: 50px;
+  height: 50px;
+}
+
+/* Description paragraph under the four elements */
+.price-description {
+  font-size: 1.2rem;
+  color: white;
+  line-height: 1.6;
+  text-align: left; /* Left-align the description text */
+  margin-top: -30px;
+}
+
+/* Styling for the large image on the left */
+.large-image1 {
+  width: 40%; /* Large image takes up 40% of the container's width */
+  padding-right: 20px; /* Space between the image and text */
+  margin-left: 70px;
+}
+
+.large-image1 img {
+  width: 80%; /* Make the image fill the container */
+  height: auto; /* Maintain the image's aspect ratio */
+}
+
+/* Styling for the price details (elements + description) on the right */
+.price-details1 {
+  display: flex;
+  flex-direction: column; /* Stack elements vertically in the container */
+  width: 55%; /* Take up 55% of the container's width */
+  margin-left: 0px;
+  margin-top: 50px;
+}
+
+/* Styling for the "01" number */
+.price-number1 {
+  font-size: 7rem; /* Large number size */
+  color: rgba(255, 255, 255, 0.4); 
+  margin-left: 90px;
+  position: relative; /* So the line can be positioned above it */
+}
+
+/* Green line under the "01" */
+.line1 {
+  position: absolute;
+  top: 82px;
+  width: 125px;
+  height: 4px;
+  background-color: #44FF00; /* Green line */
+  left: 270px; /* Ensure the line is aligned with the "01" */
+}
+
+
+/* Green line under the "01" */
+.line2 {
+  position: absolute;
+  top: 82px;
+  width: 150px;
+  height: 4px;
+  background-color: #44FF00; /* Green line */
+  left: 35px; /* Ensure the line is aligned with the "01" */
+}
+
+/* Flex container for the image and price details (includes description) */
+.price-container2 {
+  display: flex;
+  align-items: flex-start; /* Align items to the top */
+  justify-content: space-between; /* Space between the large image and details */
+  margin-top: 80px;
+}
+
+
+/* Styling for the large image on the left */
+.large-image3 {
+  width: 40%; /* Large image takes up 40% of the container's width */
+  padding-right: 20px; /* Space between the image and text */
+  margin-left: 70px;
+}
+
+.large-image3 img {
+  width: 80%; /* Make the image fill the container */
+  height: auto; /* Maintain the image's aspect ratio */
+}
+
+/* Styling for the price details (elements + description) on the right */
+.price-details3 {
+  display: flex;
+  flex-direction: column; /* Stack elements vertically in the container */
+  width: 55%; /* Take up 55% of the container's width */
+  margin-left: 0px;
+  margin-top: 50px;
+}
+
+/* Styling for the "01" number */
+.price-number3 {
+  font-size: 7rem; /* Large number size */
+  color: rgba(255, 255, 255, 0.4); 
+  margin-left: 90px;
+  position: relative; /* So the line can be positioned above it */
+}
+
+/* Green line under the "01" */
+.line3 {
+  position: absolute;
+  top: 82px;
+  width: 125px;
+  height: 4px;
+  background-color: #44FF00; /* Green line */
+  left: 340px; /* Ensure the line is aligned with the "01" */
+}
+
+
+.contact{
+  text-align: center;
+  color: white;
+  padding-top: 30px;
+}
+
+.information{
+  display: flex;
+  margin-top: 40px;
+}
+
+.connect{
+background-color: black;
+padding-bottom: 80px;
+}
+
+.logo1{
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+  background-color: #F7F7F7;
+  box-shadow: 0 -10px 15px rgba(0, 0, 0, 0.2);
+}
+
+.logo1 img{
+  width: 30%;
+  height: 250px;
+}
+
+.icons{
+  background-color: #3F4346;
+  margin-left: 20px;
+  padding: 16px;
+}
+
+.icons a{
+  margin-left: 20px;
+}
+
+.icons img{
+  width: 35px;
+  height: 35px;
+}
+
+input::placeholder {
+  color: white;
+}
+
+.email-section input{
+  background-color: #3F4346;
+  padding: 25px;
+  font-size: 1rem;
+  width: 150%;
+  margin-left: 5px;
+  color: white;
+}
+
+.message input{
+  background-color: #1E2126;
+  padding: 25px;
+  font-size: 1rem;
+  width: 130%;
+  margin-left: 140px;
+}
+
+.btn button{
+  border: 2px solid white;
+  padding: 18px;
+  font-size: 1.5rem;
+  background-color: black;
+  color: white;
+  margin-left: 265px;
+  cursor: pointer;
+}
+
+
+@media only screen and (min-width: 320px) and (max-width: 400px) {
+  
+  .front{
+    margin-top: 15px;
+  }
+  
+  .front img{
+    width: 16%;
+    height: auto;
+  }
+  
+  .navbar{
+    margin-top: 0px;
+    margin-left: 0px;
+  }
+  
+  .navbar li{
+    list-style: none;
+  }
+  
+  .navbar li a{
+    margin-left: 10px;
+    font-size: 8px;
+  }
+  
+  .contact-us{
+    margin-top: 0px;
+    margin-left: 0;
+    margin-right: 0px;
+  }
+  
+  .contact-us a{
+    border-radius: 20px;
+    padding: 2px 2px;
+    font-size: 8px;
+  }  
+}
+
+@media only screen and (min-width: 401px) and (max-width: 480px) {
+  
+  .front{
+    margin-top: 15px;
+  }
+  
+  .front img{
+    width: 16%;
+    height: auto;
+  }
+  
+  .navbar{
+    margin-top: 0px;
+    margin-left: 0px;
+  }
+  
+  .navbar li{
+    list-style: none;
+  }
+  
+  .navbar li a{
+    margin-left: 11px;
+    font-size: 10px;
+  }
+  
+  .contact-us{
+    margin-top: 0px;
+    margin-left: 0;
+    margin-right: 0px;
+  }
+  
+  .contact-us a{
+    border-radius: 20px;
+    padding: 2px 2px;
+    font-size: 10px;
+  }  
+}
+
+
+@media only screen and (max-width:480px){
+
+  .travel{
+    top: 22%;
+    left: 5%;
+  }
+
+  .line-sonic{
+    margin-top: 9px;
+    width: 90px;
+    height: 2.5px;
+    margin-right: 4px
+  }
+
+  .travel h5{
+    font-size: 0.8rem;
+  }
+
+  .travel h3{
+    font-size: 1rem;
+  }
+
+  .read-more{
+    font-size: 0.9rem;
+    margin-top: 0;
+  }
+
+  .follow-us{
+    padding: 3px;
+    right: 0;
+    top: 48%;
+  }
+
+  .follow-us h3{
+    font-size: 0.8rem;
+  }
+
+  .follow-us img{
+    width: 22px;
+    height: 22px;
+  }
+
+  #down {
+    top: 15px;
+  }
+
+    /* Overall price guarantee section */
+    .price-guarantee {
+      padding: 10px;
+    }
+
+  
+    .large-image img,
+    .large-image1 img,
+    .large-image3 img {
+      width: 100%; /* Make the image fill the container */
+      height: 200px; /* Maintain the image's aspect ratio */
+    }
+
+    .large-image1, .large-image3{
+      margin-left: 5px;
+    }
+  
+    /* Styling for the price details (elements + description) on the right */
+    .price-details,
+    .price-details1,
+    .price-details3 {
+      width: 65%; /* Take up the full width of the container */
+      margin-left: 0;
+      margin-top: -20px; /* Add top margin for spacing */
+    }
+  
+    /* Flex container for the "01", line, "Best Price Guarantee", and icon */
+    .price-elements {
+      align-items: center; /* Center the content */
+      text-align: center; /* Center the text */
+    }
+  
+    /* Styling for the "01" number */
+    .price-number,
+    .price-number1,
+    .price-number3 {
+      font-size: 3rem; /* Reduce the font size of the number */
+      margin-bottom: 10px; /* Add space below the number */
+      margin-right: 0;
+    }
+
+    .price-number1, .price-number3{
+      margin-left: 0;
+    }
+  
+    /* Green line under the "01" */
+    .line,
+    .line1,
+    .line2,
+    .line3 {
+     display: none;
+    }
+  
+    /* Styling for the "Best Price Guarantee" text and others */
+    .price-text {
+      font-size: 0.7rem; /* Smaller font size for small screens*/
+      margin-right: 0;
+    }
+  
+    /* Styling for the icon */
+    .price-icon img {
+      width: 25px;
+      height: 25px; /* Reduce icon size for small screens */
+      margin-bottom: 10px; /* Add space below the icon */
+    }
+  
+    /* Description paragraph */
+    .price-description {
+      font-size: 0.7rem; /* Smaller font size */
+      line-height: 1.4;
+      text-align: center; /* Center-align the description text */
+      margin-top: -40px; /* Add some space above the description */
+    }
+
+    .price-container2{
+      margin-top: 35px;
+    }
+
+    .logo1 img {
+      width: 30%;
+      height: auto;
+  }
+
+  .contact{
+    padding: 10px;
+  }
+
+  .contact p{
+    font-size: 0.8rem;
+  }
+
+  .icons img {
+    width: 30px;
+    height: 30px;
+}
+
+  .information{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+  }
+
+  .email-section input, .message input{
+    padding: 16px;
+    width: 92%;
+    font-size: 0.6rem;
+    margin-left: 15px;
+  }
+
+
+  .icons{
+    background-color: black;
+    margin-left: 5%;
+  }
+  .btn button {
+    padding: 10px;
+    font-size: 0.9rem;
+    margin-left: 32%; /* Adjust right margin for alignment */
+    width: 30%; /* Make button width responsive */
+    max-width: none; /* Remove max width for the button */
+  }
+  
+  }
+  

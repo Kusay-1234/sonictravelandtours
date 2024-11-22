@@ -1,0 +1,379 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins";
+}
+
+
+body{
+  overflow-x: hidden;
+}
+
+.front{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.front img{
+  width: 12%;
+  height: 120px;
+  margin-top: -15px;
+}
+
+.navbar{
+  display: flex;
+  margin-top: 30px;
+  margin-left: 80px;
+}
+
+.navbar li{
+  list-style: none;
+}
+
+.navbar li a{
+  text-decoration: none;
+  color: black;
+  margin-left: 50px;
+}
+
+.contact-us{
+  margin-top: 30px;
+  margin-left: 0;
+  margin-right: 120px;
+}
+
+.contact-us a{
+  text-decoration: none;
+  color: black;
+  background-color: #D1D1D1;
+  color: white;
+  border-radius: 20px;
+  padding: 5px 10px;
+}
+
+.bg{
+  background-color: #EFEFEF;
+}
+
+.bg1{
+  background-color: #E4E4E4;
+  padding-bottom: 120px;
+}
+
+.contact-sonic{
+  text-align: center;
+  padding: 50px;
+}
+
+.contact-sonic h2{
+  font-size: 3rem;
+}
+
+.contact-sonic p{
+  font-size: 1rem;
+  margin: 0 200px;
+}
+
+.circle-overlay {
+  width: 60px; /* Adjust the size of the circle image */
+  height: 60px; /* Adjust the size of the circle image */
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: #008736;
+}
+
+.circle-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensure the circle image is fully contained within the circle */
+  padding: 15px;  
+}
+
+.phone, .email, .address{
+  display: flex;
+  padding-bottom: 30px;
+  transition: transform 0.3s ease;  /* Smooth transition for the zoom effect */
+}
+
+.phone:hover, .email:hover, .address:hover{
+  transform: scale(1.1); /* Zoom in by 20% on hover */
+}
+
+.get-in{
+  margin-top: 70px;
+  margin-left: 50px;
+}
+
+.get-in h2{
+  font-size: 2rem;
+}
+
+.get-in #get{
+  font-size: 1rem;
+  max-width: 100%;  
+}
+
+.phone{
+  margin-top: 50px;
+}
+
+.phone-content, .email-content, .address-content{
+  margin-top: 6px;
+  padding-left: 5px;
+}
+
+.phone-content p, .email-content p, .address-content p{
+  font-size: 0.8rem;
+}
+
+.divider {
+  width: 40%; /* Adjust the width as needed */
+  height: 2px; /* Thickness of the line */
+  background-color: #000; /* Color of the line */
+  margin-bottom: 40px;
+}
+
+.icon{
+  display: flex;
+  gap: 20px;
+}
+.icon .circle-overlay{
+  transition: transform 0.3s ease;  /* Smooth transition for the zoom effect */
+}
+
+.icon .circle-overlay:hover{
+  transform: scale(1.1); /* Zoom in by 20% on hover */
+}
+
+.info{
+  display: flex;
+}
+
+
+.form h2{
+  font-size: 2rem;
+  padding-bottom: 15px;
+}
+
+.form{
+  margin-top: 100px;
+  margin-right: 100px;
+  border-radius: 20px;
+  background-color: white;
+  width: 80%;
+  padding: 40px;
+}
+
+/* Input field without the box, only a line underneath */
+input[type="text"] {
+  width: 90%; /* Makes input stretch to full container width */
+  padding-top: 30px;
+  border: none; /* Remove the default border */
+  border-bottom: 2px solid #797979; /* Underline the input */
+  outline: none; /* Remove focus outline */
+  background-color: transparent; /* Transparent background */
+  font-size: 0.9rem;
+  color: #797979;
+}
+
+input[type="text"]:focus {
+  border-bottom: 2px solid #008736; /* Change underline color on focus */
+}
+
+.form p{
+  padding-top: 40px;
+  text-align: center;
+  color: #696969;
+}
+
+.form button{
+  margin-left: 250px;
+  border: none;
+  margin-top: 30px;
+  cursor: pointer;
+  background-color: #008736;
+  padding: 8px 50px; 
+  border-radius: 40px;
+  font-size: 1.5rem;
+  color: white;
+  transition: background-color 0.3s ease; /* For smooth background transition */
+}
+
+.form button:hover{
+  background-color: #B4B4B4;
+}
+
+.bg3{
+  background-color: rebeccapurple;
+}
+
+.map{
+  display: flex;
+  justify-content: center;
+}
+
+.map img{
+  width: 65%;
+  height: 320px;
+  position: relative;
+  bottom: 60px;
+}
+
+.contact{
+  text-align: center;
+  color: white;
+  padding-top: 30px;
+}
+
+.information{
+  display: flex;
+  margin-top: 40px;
+}
+
+.connect{
+background-color: black;
+padding-bottom: 80px;
+}
+
+.logo1{
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+  background-color: #F7F7F7;
+  box-shadow: 0 -10px 15px rgba(0, 0, 0, 0.2);
+}
+
+.logo1 img{
+  width: 30%;
+  height: 250px;
+}
+
+.icons{
+  background-color: #3F4346;
+  margin-left: 20px;
+  padding: 16px;
+}
+
+.icons a{
+  margin-left: 20px;
+}
+
+.icons img{
+  width: 35px;
+  height: 35px;
+}
+
+input::placeholder {
+  color: white;
+}
+
+.email-section input{
+  background-color: #3F4346;
+  padding: 25px;
+  font-size: 1rem;
+  width: 150%;
+  margin-left: 5px;
+  color: white;
+}
+
+.message input{
+  background-color: #1E2126;
+  padding: 25px;
+  font-size: 1rem;
+  width: 130%;
+  margin-left: 140px;
+}
+
+.btn button{
+  border: 2px solid white;
+  padding: 18px;
+  font-size: 1.5rem;
+  background-color: black;
+  color: white;
+  margin-left: 265px;
+  cursor: pointer;
+}
+
+#name::placeholder, #mail::placeholder, #sms::placeholder{
+  color: #797979;
+}
+
+/* Responsive Design */
+@media only screen and (min-width: 320px) and (max-width: 400px) {
+  
+  .front{
+    margin-top: 15px;
+  }
+  
+  .front img{
+    width: 22%;
+    height: auto;
+  }
+  
+  .navbar{
+    margin-top: 0px;
+    margin-left: 0px;
+  }
+  
+  .navbar li{
+    list-style: none;
+  }
+  
+  .navbar li a{
+    margin-left: 10px;
+    font-size: 7px;
+  }
+  
+  .contact-us{
+    margin-top: 0px;
+    margin-left: 0;
+    margin-right: 0px;
+  }
+  
+  .contact-us a{
+    border-radius: 20px;
+    padding: 2px 2px;
+    font-size: 8px;
+  }  
+}
+
+
+@media only screen and (min-width: 401px) and (max-width: 480px) {
+  
+  .front{
+    margin-top: 15px;
+  }
+  
+  .front img{
+    width: 22%;
+    height: auto;
+  }
+  
+  .navbar{
+    margin-top: 0px;
+    margin-left: 0px;
+  }
+  
+  .navbar li{
+    list-style: none;
+  }
+  
+  .navbar li a{
+    margin-left: 11px;
+    font-size: 9px;
+  }
+  
+  .contact-us{
+    margin-top: 0px;
+    margin-left: 0;
+    margin-right: 0px;
+  }
+  
+  .contact-us a{
+    border-radius: 20px;
+    padding: 2px 2px;
+    font-size: 10px;
+  }  
+}
