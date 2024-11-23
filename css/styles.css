@@ -58,6 +58,10 @@ video {
   height: auto;
 }
 
+.video-container{
+  background-color: white;
+}
+
 .gradient{
   background: linear-gradient(to bottom, #CDCDCD, #676767);
 
@@ -376,6 +380,84 @@ input::placeholder {
 }
 
 
+@media only screen and (min-width: 320px) and (max-width: 400px) {
+  
+  .front{
+    margin-top: 15px;
+  }
+  
+  .front img{
+    width: 16%;
+    height: auto;
+  }
+  
+  .navbar{
+    margin-top: 0px;
+    margin-left: 0px;
+  }
+  
+  .navbar li{
+    list-style: none;
+  }
+  
+  .navbar li a{
+    margin-left: 10px;
+    font-size: 8px;
+  }
+  
+  .contact-us{
+    margin-top: 0px;
+    margin-left: 0;
+    margin-right: 0px;
+  }
+  
+  .contact-us a{
+    border-radius: 20px;
+    padding: 2px 2px;
+    font-size: 8px;
+  }  
+}
+
+@media only screen and (min-width: 401px) and (max-width: 480px) {
+  
+  .front{
+    margin-top: 15px;
+  }
+  
+  .front img{
+    width: 16%;
+    height: auto;
+  }
+  
+  .navbar{
+    margin-top: 0px;
+    margin-left: 0px;
+  }
+  
+  .navbar li{
+    list-style: none;
+  }
+  
+  .navbar li a{
+    margin-left: 11px;
+    font-size: 10px;
+  }
+  
+  .contact-us{
+    margin-top: 0px;
+    margin-left: 0;
+    margin-right: 0px;
+  }
+  
+  .contact-us a{
+    border-radius: 20px;
+    padding: 2px 2px;
+    font-size: 10px;
+  }  
+}
+
+
+
 @media only screen and (max-width: 480px) {
 
   body{
@@ -450,42 +532,50 @@ input::placeholder {
       margin-bottom: 0;
   }
 
+  
   .logo1 img {
-    width: 60%; /* Ensure logo is appropriately sized */
+    width: 30%;
     height: auto;
-  }
+}
 
-  .information {
-    flex-direction: column; /* Stack elements vertically */
-    align-items: center; /* Center align elements */
-    margin-top: 20px;
-  }
+.contact{
+  padding: 10px;
+}
 
-  .icons {
-    margin-left: 0;
-    padding: 5px;
-    width: 72%; /* Make icons responsive */
-    text-align: center; /* Center icons */
-  }
+.contact p{
+  font-size: 0.8rem;
+}
 
-  .icons a {
-    margin: 10px;
-  }
+.icons img {
+  width: 30px;
+  height: 30px;
+}
 
-  .email-section input,
-  .message input {
-    width: 100%; /* Make inputs take full width on small screens */
-    margin-left: 0;
-    padding: 10px;
-    font-size: 0.7rem;
-  }
+.information{
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
 
-  .btn button {
-    width: 100%; /* Make button take full width */
-    padding: 5px;
-    font-size: 1rem;
-    margin-left: 8px;
-    margin-top: 10px;
-  }
+.email-section input, .message input{
+  padding: 16px;
+  width: 92%;
+  font-size: 0.6rem;
+  margin-left: 15px;
+}
+
+
+.icons{
+  background-color: black;
+  margin-left: 5%;
+}
+
+.btn button {
+  padding: 10px;
+  font-size: 0.9rem;
+  margin-left: 32%; /* Adjust right margin for alignment */
+  width: 30%; /* Make button width responsive */
+  max-width: none; /* Remove max width for the button */
+}
   
 }

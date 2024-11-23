@@ -292,6 +292,7 @@ input::placeholder {
 
 
 @media only screen and (max-width: 480px) {
+
   .visa img{
     height: 200px;
   }
@@ -309,26 +310,30 @@ input::placeholder {
 }
 
 .container{
-  bottom: 85px;
+  bottom: 75px;
+  display: flex;
+  flex-direction: column;
 }
 
 .box{
-  width: 24%;
+  width: 80%;
   height: auto;
+  margin-left: 40px;
 }
 
 .header{
   font-size: 0.9rem;
-  padding: 5px;
+  padding: 6px;
 }
 
 .content h3{
-font-size: 0.8rem;
+    font-size: 1.2rem;
     padding-bottom: 10px;
 }
 
 .content p {
-  font-size: 0.6rem;
+  font-size: 0.8rem;
+  text-align: center;
 }
 
 .regular {
@@ -336,14 +341,17 @@ font-size: 0.8rem;
 }
 
 .content button {
-  padding: 2px 0px;
+  padding: 2px 10px;
   font-size: 0.7rem;
-  margin-left: 0;
+  margin-bottom: 0;
+  margin-left: 37%;
+  width: 35%;
+  max-width: none;
 }
 
 .down-content p{
-  font-size: 1rem;
-  margin: -30px 0px !important;
+  font-size: 0.7rem;
+  margin: -30px 10px !important;
 }
 
 .logo1 img {
@@ -380,8 +388,11 @@ margin-left: 15px;
 
 .icons{
 background-color: black;
-margin-left: 5%;
+margin-left: 0;
+display: flex;
+justify-content: center;
 }
+
 .btn button {
 padding: 10px;
 font-size: 0.9rem;
@@ -391,3 +402,193 @@ max-width: none; /* Remove max width for the button */
 }
 
 }
+
+
+@media only screen and (min-width: 481px) and (max-width: 600px) {
+  
+  .front{
+    margin-top: 15px;
+  }
+  
+  .front img{
+    width: 13%;
+    height: auto;
+  }
+  
+  .navbar{
+    margin-top: 0px;
+    margin-left: 0px;
+  }
+  
+  .navbar li{
+    list-style: none;
+  }
+  
+  .navbar li a{
+    margin-left: 28px;
+    font-size: 11px;
+  }
+  
+  .contact-us{
+    margin-top: 0px;
+    margin-left: 0;
+    margin-right: 0px;
+  }
+  
+  .contact-us a{
+    border-radius: 20px;
+    padding: 2px 2px;
+    font-size: 11px;
+  }  
+}
+
+@media only screen and (min-width: 601px) and (max-width: 767px) {
+  
+  .front{
+    margin-top: 15px;
+  }
+  
+  .front img{
+    width: 13%;
+    height: auto;
+  }
+  
+  .navbar{
+    margin-top: 8px;
+    margin-left: 0px;
+  }
+  
+  .navbar li{
+    list-style: none;
+  }
+  
+  .navbar li a{
+    margin-left: 30px;
+    font-size: 13px;
+  }
+  
+  .contact-us{
+    margin-top: 8px;
+    margin-left: 0;
+    margin-right: 0px;
+  }
+  
+  .contact-us a{
+    border-radius: 20px;
+    padding: 2px 2px;
+    font-size: 13px;
+  }  
+}
+
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+
+  .visa img{
+    height: 220px;
+  }
+
+  .visa-content h3 {
+    font-size: 1.5rem;
+}
+
+  .visa-content p {
+    font-size: 0.7rem;
+}
+
+.visa-content{
+  bottom: 140px;
+}
+
+
+.container{
+  bottom: 75px;
+}
+
+.box{
+  width: 24%;
+  height: auto;
+}
+
+.header{
+  font-size: 0.8rem;
+  padding: 6px;
+}
+
+.content h3{
+  font-size: 1rem;
+  padding-bottom: 12px;
+}
+
+.content p {
+  font-size: 0.6rem;
+}
+
+.regular {
+  padding-bottom: 20px;
+}
+
+.content button {
+  padding: 2px 5px;
+  font-size: 0.7rem;
+  margin-bottom: 20px;
+  margin-left: 0;
+}
+
+.down-content p{
+  font-size: 0.8rem;
+  margin: -35px 30px !important;
+}
+
+
+.logo1 img {
+  width: 30%;
+  height: auto;
+}
+
+.contact{
+padding: 10px;
+}
+
+.contact p{
+font-size: 0.8rem;
+}
+
+.icons {
+background-color: black;
+display: flex;
+justify-content: center;
+margin-left: 0;
+}
+
+.icons img {
+width: 30px;
+height: 30px;
+}
+
+.information{
+display: flex;
+flex-direction: column;
+margin-top: 5px;
+}
+
+.email-section input, .message input{
+padding: 14px;
+width: 72%;
+font-size: 0.7rem;
+margin-left: 14%;
+}
+
+.btn button {
+padding: 10px;
+font-size: 0.9rem;
+margin-left: 45%; /* Adjust right margin for alignment */
+width: 15%; /* Make button width responsive */
+max-width: none; /* Remove max width for the button */
+}
+
+.connect{
+padding-bottom: 60px;
+}
+
+}
+  
+

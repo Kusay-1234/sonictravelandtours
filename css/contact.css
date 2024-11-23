@@ -308,7 +308,7 @@ input::placeholder {
   }
   
   .front img{
-    width: 22%;
+    width: 16%;
     height: auto;
   }
   
@@ -347,7 +347,7 @@ input::placeholder {
   }
   
   .front img{
-    width: 22%;
+    width: 16%;
     height: auto;
   }
   
@@ -362,7 +362,7 @@ input::placeholder {
   
   .navbar li a{
     margin-left: 11px;
-    font-size: 9px;
+    font-size: 10px;
   }
   
   .contact-us{
@@ -376,4 +376,381 @@ input::placeholder {
     padding: 2px 2px;
     font-size: 10px;
   }  
+
+}
+
+@media only screen and (max-width: 480px) {
+
+.contact-sonic{
+  padding: 20px;
+}
+
+.contact-sonic h2 {
+  font-size: 1.5rem;
+}
+
+.contact-sonic p{
+  font-size: 0.8rem;
+  margin: 0;
+}
+
+.info{
+  display: flex;
+  flex-direction: column;
+}
+
+.get-in{
+  margin-top: 0;
+}
+
+.get-in h2 {
+  font-size: 1.5rem;
+  margin-left: 0;
+}
+
+.get-in #get {
+font-size: 0.8rem;
+max-width: 100%;
+}
+
+.circle-overlay{
+height: 40px;
+width: 40px;
+}
+
+.circle-overlay img{
+padding: 10px;
+}
+
+.phone-content h5, .phone-content p, .email-content h5, .email-content p, .address-content h5, .address-content p{
+font-size: 0.6rem;
+}
+
+.phone {
+margin-top: 15px;
+}
+
+.phone, .email, .address{
+padding-bottom: 20px;
+}
+
+.divider{
+  width: 40%;
+  margin-bottom: 10px;
+}
+
+.form{
+  width: 92%;
+  padding: 25px;
+  margin-left: 10px;
+  margin-top: 25px;
+}
+
+.form h2 {
+  font-size: 1.5rem;
+  padding-bottom: 0px;
+}
+
+input[type="text"] {
+  width: 90%;
+  padding-top: 20px;
+  font-size: 0.6rem;
+}
+
+.form p{
+  padding-top: 20px;
+  font-size: 0.7rem;
+}
+
+.form button{
+  margin-left: 36%;
+  width: 40%;
+  max-width: none;
+  margin-top: 20px;
+  padding: 3px 14px;
+  font-size: 0.9rem;
+}
+
+.map img{
+  width: 80%;
+  height: auto;
+}
+
+
+.logo1 img {
+  width: 30%;
+  height: auto;
+}
+
+.contact p{
+  font-size: 0.8rem;
+}
+
+.icons img {
+  width: 30px;
+  height: 30px;
+}
+
+.contact{
+  padding: 10px;
+  }
+  
+  .information{
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  }
+  
+  .email-section input, .message input{
+  padding: 16px;
+  width: 92%;
+  font-size: 0.6rem;
+  margin-left: 15px;
+  }
+  
+  
+  .icons{
+  background-color: black;
+  margin-left: 0;
+  display: flex;
+  justify-content: center;
+  }
+  
+  .btn button {
+  padding: 10px;
+  font-size: 0.9rem;
+  margin-left: 32%; /* Adjust right margin for alignment */
+  width: 30%; /* Make button width responsive */
+  max-width: none; /* Remove max width for the button */
+  }
+
+}
+
+
+@media only screen and (min-width: 481px) and (max-width: 600px) {
+  
+  .front{
+    margin-top: 15px;
+  }
+  
+  .front img{
+    width: 13%;
+    height: auto;
+  }
+  
+  .navbar{
+    margin-top: 0px;
+    margin-left: 0px;
+  }
+  
+  .navbar li{
+    list-style: none;
+  }
+  
+  .navbar li a{
+    margin-left: 28px;
+    font-size: 11px;
+  }
+  
+  .contact-us{
+    margin-top: 0px;
+    margin-left: 0;
+    margin-right: 0px;
+  }
+  
+  .contact-us a{
+    border-radius: 20px;
+    padding: 2px 2px;
+    font-size: 11px;
+  }  
+}
+
+@media only screen and (min-width: 601px) and (max-width: 767px) {
+  
+  .front{
+    margin-top: 15px;
+  }
+  
+  .front img{
+    width: 13%;
+    height: auto;
+  }
+  
+  .navbar{
+    margin-top: 8px;
+    margin-left: 0px;
+  }
+  
+  .navbar li{
+    list-style: none;
+  }
+  
+  .navbar li a{
+    margin-left: 30px;
+    font-size: 13px;
+  }
+  
+  .contact-us{
+    margin-top: 8px;
+    margin-left: 0;
+    margin-right: 0px;
+  }
+  
+  .contact-us a{
+    border-radius: 20px;
+    padding: 2px 2px;
+    font-size: 13px;
+  }  
+}
+
+
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+
+.contact-sonic{
+  padding: 20px;
+}
+
+.contact-sonic h2 {
+  font-size: 1.5rem;
+}
+
+.contact-sonic p{
+  font-size: 0.8rem;
+  margin: 0 43px;
+}
+
+
+
+.get-in{
+  margin-top: 0;
+  margin-left: 30px;
+}
+
+.get-in h2 {
+  font-size: 1.5rem;
+  margin-left: 0;
+}
+
+.get-in #get {
+font-size: 0.8rem;
+max-width: 53%;
+}
+
+.circle-overlay{
+height: 40px;
+width: 40px;
+}
+
+.circle-overlay img{
+padding: 10px;
+}
+
+.phone-content h5, .phone-content p, .email-content h5, .email-content p, .address-content h5, .address-content p{
+font-size: 0.6rem;
+}
+
+.phone {
+margin-top: 15px;
+}
+
+.phone, .email, .address{
+padding-bottom: 20px;
+}
+
+.divider{
+  width: 40%;
+  margin-bottom: 10px;
+}
+
+.form{
+  width: 72%;
+  padding: 15px;
+  margin-left: -188px;
+  margin-top: 25px;
+  height: auto;
+  margin-right: 8px;
+}
+
+.form h2 {
+  font-size: 1rem;
+  padding-bottom: 0px;
+}
+
+input[type="text"] {
+  width: 90%;
+  padding-top: 20px;
+  font-size: 0.5rem;
+}
+
+.form p{
+  padding-top: 20px;
+  font-size: 0.7rem;
+}
+
+.form button{
+  margin-left: 24%;
+  width: 51%;
+  max-width: none;
+  margin-top: 20px;
+  padding: 2px 12px;
+  font-size: 0.9rem;
+}
+
+.map img{
+  width: 80%;
+  height: auto;
+}
+
+
+.logo1 img {
+  width: 30%;
+  height: auto;
+}
+
+.contact{
+padding: 10px;
+}
+
+.contact p{
+font-size: 0.8rem;
+}
+
+.icons {
+background-color: black;
+display: flex;
+justify-content: center;
+margin-left: 0;
+}
+
+.icons img {
+width: 30px;
+height: 30px;
+}
+
+.information{
+display: flex;
+flex-direction: column;
+margin-top: 5px;
+}
+
+.email-section input, .message input{
+padding: 14px;
+width: 72%;
+font-size: 0.7rem;
+margin-left: 14%;
+}
+
+.btn button {
+padding: 10px;
+font-size: 0.9rem;
+margin-left: 45%; /* Adjust right margin for alignment */
+width: 15%; /* Make button width responsive */
+max-width: none; /* Remove max width for the button */
+}
+
+.connect{
+padding-bottom: 60px;
+}
+
+
 }
