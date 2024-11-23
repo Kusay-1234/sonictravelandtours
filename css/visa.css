@@ -590,5 +590,274 @@ padding-bottom: 60px;
 }
 
 }
+
+@media only screen and (min-width: 768px) and (max-width: 930px) {
+  
+  .front{
+    margin-top: 15px;
+  }
+  
+  .front img{
+    width: 15%;
+    height: auto;
+  }
+  
+  .navbar{
+    margin-top: 15px;
+    margin-left: 0px;
+  }
+  
+  .navbar li{
+    list-style: none;
+  }
+  
+  .navbar li a{
+    margin-left: 42px;
+    font-size: 14px;
+  }
+  
+  .contact-us{
+    margin-top: 15px;
+    margin-left: 0;
+    margin-right: 50px;
+  }
+  
+  .contact-us a{
+    border-radius: 20px;
+    padding: 5px 5px;
+    font-size: 14px;
+  }  
+}
   
 
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+
+  .visa img{
+    height: 250px;
+  }
+
+  .visa-content h3 {
+    font-size: 2.5rem;
+}
+
+  .visa-content p {
+    font-size: 1rem;
+}
+
+.visa-content{
+  bottom: 190px;
+}
+
+
+.container{
+  bottom: 116px;
+}
+
+.box{
+  width: 24%;
+  height: auto;
+}
+
+.header{
+  font-size: 0.9rem;
+  padding: 6px;
+}
+
+.content h3{
+  font-size: 1.2rem;
+  padding-bottom: 16px;
+}
+
+.content p {
+  font-size: 0.8rem;
+}
+
+.regular {
+  padding-bottom: 25px;
+}
+
+.content button {
+  padding: 5px 10px;
+  font-size: 0.8rem;
+  margin-bottom: 20px;
+  margin-left: 45px;
+}
+
+.down-content p{
+  font-size: 1rem;
+  margin: -35px 80px !important;
+}
+
+
+.logo1 img {
+  width: 25%;
+  height: auto;
+}
+
+.contact{
+padding-top: 20px;
+}
+
+
+/* Ensure .information remains a row */
+.information {
+flex-direction: row; /* Keep row direction */
+justify-content: space-between; /* Distribute items evenly */
+align-items: center; /* Center vertically */
+width: 100%; /* Ensure it takes full available width */
+}
+
+/* Adjust the button inside .btn */
+.btn button {
+width: 90%; /* Button takes 90% of available space */
+font-size: 1.4rem; /* Adjust font size */
+margin-left: 0; /* Remove left margin */
+}
+
+/* Adjust email input fields to be fully responsive */
+.email-section input {
+width: 100%; /* Ensure it takes full width */
+margin-left: 0; /* Remove margin */
+padding: 18px; /* Adjust padding for better fit */
+box-sizing: border-box;
+}
+
+/* Adjust message input fields to be fully responsive */
+.message input {
+width: 100%; /* Ensure it takes full width */
+margin-left: 0; /* Remove margin */
+padding: 18px; /* Adjust padding for better fit */
+box-sizing: border-box;
+}
+
+/* Icons container */
+.icons {
+margin-left: 0; /* Remove left margin */
+padding: 12px; /* Adjust padding */
+display: flex;
+justify-content: center; /* Center the icons horizontally */
+}
+
+.icons a {
+margin-left: 10px; /* Adjust space between icons */
+}
+
+.icons img {
+width: 30px; /* Adjust icon size */
+height: 30px; /* Maintain aspect ratio */
+}
+
+}
+
+
+@media only screen and (min-width: 1025px) and (max-width: 1200px) {
+
+  .visa img{
+    height: 250px;
+  }
+
+  .visa-content h3 {
+    font-size: 2.5rem;
+}
+
+  .visa-content p {
+    font-size: 1rem;
+}
+
+.visa-content{
+  bottom: 190px;
+}
+
+
+.container{
+  bottom: 116px;
+}
+
+.box{
+  width: 24%;
+  height: auto;
+}
+
+.header{
+  font-size: 0.9rem;
+  padding: 6px;
+}
+
+.content h3{
+  font-size: 1.2rem;
+  padding-bottom: 16px;
+}
+
+.content p {
+  font-size: 0.8rem;
+}
+
+.regular {
+  padding-bottom: 25px;
+}
+
+.content button {
+  padding: 5px 10px;
+  font-size: 0.8rem;
+  margin-bottom: 20px;
+  margin-left: 45px;
+}
+
+.down-content p{
+  font-size: 1rem;
+  margin: -35px 80px !important;
+}
+
+.contact{
+  padding-top: 20px;
+}
+
+
+/* Ensure .information remains a row */
+.information {
+  flex-direction: row; /* Keep row direction */
+  justify-content: space-between; /* Distribute items evenly */
+  align-items: center; /* Center vertically */
+  width: 100%; /* Ensure it takes full available width */
+}
+
+/* Adjust the button inside .btn */
+.btn button {
+  width: 90%; /* Button takes 90% of available space */
+  font-size: 1.4rem; /* Adjust font size */
+  margin-left: 0; /* Remove left margin */
+}
+
+/* Adjust email input fields to be fully responsive */
+.email-section input {
+  width: 100%; /* Ensure it takes full width */
+  margin-left: 0; /* Remove margin */
+  padding: 18px; /* Adjust padding for better fit */
+  box-sizing: border-box;
+}
+
+/* Adjust message input fields to be fully responsive */
+.message input {
+  width: 100%; /* Ensure it takes full width */
+  margin-left: 0; /* Remove margin */
+  padding: 18px; /* Adjust padding for better fit */
+  box-sizing: border-box;
+}
+
+/* Icons container */
+.icons {
+  margin-left: 0; /* Remove left margin */
+  padding: 12px; /* Adjust padding */
+  display: flex;
+  justify-content: center; /* Center the icons horizontally */
+}
+
+.icons a {
+  margin-left: 10px; /* Adjust space between icons */
+}
+
+.icons img {
+  width: 30px; /* Adjust icon size */
+  height: 30px; /* Maintain aspect ratio */
+}
+}

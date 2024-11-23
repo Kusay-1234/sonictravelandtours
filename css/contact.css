@@ -112,7 +112,7 @@ body{
 
 .get-in #get{
   font-size: 1rem;
-  max-width: 100%;  
+  max-width: 90%;  
 }
 
 .phone{
@@ -618,86 +618,89 @@ input[type="text"] {
   font-size: 0.8rem;
   margin: 0 43px;
 }
+.circle-overlay {
+  width: 36px; /* Adjust size of circle */
+  height: 36px; /* Adjust size of circle */
+}
 
+.circle-img {
+  padding: 10px; /* Adjust padding for circle image */
+}
 
-
-.get-in{
-  margin-top: 0;
+.get-in {
+  margin-top: 20px;
   margin-left: 30px;
 }
 
 .get-in h2 {
-  font-size: 1.5rem;
-  margin-left: 0;
+  font-size: 1.3rem;
 }
 
 .get-in #get {
-font-size: 0.8rem;
-max-width: 53%;
-}
-
-.circle-overlay{
-height: 40px;
-width: 40px;
-}
-
-.circle-overlay img{
-padding: 10px;
-}
-
-.phone-content h5, .phone-content p, .email-content h5, .email-content p, .address-content h5, .address-content p{
-font-size: 0.6rem;
+  font-size: 0.8rem;
+  max-width: 95%;
 }
 
 .phone {
-margin-top: 15px;
+  margin-top: 20px;
 }
 
-.phone, .email, .address{
-padding-bottom: 20px;
+.phone, .email, .address {
+  flex-direction: row; /* Apply flex-direction: row on larger mobile screens */
+  padding-bottom: 25px;
 }
 
-.divider{
-  width: 40%;
-  margin-bottom: 10px;
+
+
+.phone-content h5, .phone-content p, .email-content h5, .email-content p, .address-content h5, .address-content p{
+  font-size: 0.6rem;
+  }
+
+
+.divider {
+  width: 60%; /* Adjust the width of the divider */
+  margin-bottom: 20px;
 }
 
-.form{
-  width: 72%;
-  padding: 15px;
-  margin-left: -188px;
-  margin-top: 25px;
-  height: auto;
-  margin-right: 8px;
+.icon {
+  flex-direction: row; /* Apply flex-direction: row for icons */
+  gap: 15px;
+}
+
+.info {
+  flex-direction: row; /* Change .info to row layout */
+  align-items: center; /* Align items in a row */
+}
+
+.form {
+  margin-top: -60px;
+  margin-right: 20px;
+  width: 235%; /* Full-width form on smaller screens */
+  padding: 30px;
 }
 
 .form h2 {
   font-size: 1rem;
-  padding-bottom: 0px;
 }
 
-input[type="text"] {
-  width: 90%;
-  padding-top: 20px;
-  font-size: 0.5rem;
+.form p {
+  font-size: 0.6rem;
 }
 
-.form p{
-  padding-top: 20px;
-  font-size: 0.7rem;
+.form button {
+  margin-left: 50%;
+  transform: translateX(-50%);
+  padding: 5px 30px;
+  font-size: 0.8rem;
 }
 
-.form button{
-  margin-left: 24%;
-  width: 51%;
-  max-width: none;
-  margin-top: 20px;
-  padding: 2px 12px;
-  font-size: 0.9rem;
+.form #name, .form #mail, .form #sms{
+  font-size: 0.6rem;
 }
+
 
 .map img{
-  width: 80%;
+  width: 60%;
   height: auto;
 }
 
@@ -752,5 +755,263 @@ max-width: none; /* Remove max width for the button */
 padding-bottom: 60px;
 }
 
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 930px) {
+  
+  .front{
+    margin-top: 15px;
+  }
+  
+  .front img{
+    width: 15%;
+    height: auto;
+  }
+  
+  .navbar{
+    margin-top: 15px;
+    margin-left: 0px;
+  }
+  
+  .navbar li{
+    list-style: none;
+  }
+  
+  .navbar li a{
+    margin-left: 42px;
+    font-size: 14px;
+  }
+  
+  .contact-us{
+    margin-top: 15px;
+    margin-left: 0;
+    margin-right: 50px;
+  }
+  
+  .contact-us a{
+    border-radius: 20px;
+    padding: 5px 5px;
+    font-size: 14px;
+  }  
+}
+
+
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+
+  .contact-sonic{
+    padding: 20px;
+  }
+  
+  .contact-sonic h2 {
+    font-size: 1.5rem;
+  }
+  
+  .contact-sonic p{
+    font-size: 0.8rem;
+    margin: 0 120px;
+  }
+
+  .circle-overlay {
+    width: 50px; /* Adjust size of circle */
+    height: 50px; /* Adjust size of circle */
+  }
+  
+  .circle-img {
+    padding: 13px; /* Adjust padding for circle image */
+  }
+  
+  .get-in {
+    margin-top: 20px;
+    margin-left: 30px;
+  }
+  
+  .get-in h2 {
+    font-size: 1.5rem;
+  }
+  
+  .get-in #get {
+    font-size: 0.8rem;
+    max-width: 95%;
+  }
+  
+  .phone {
+    margin-top: 30px;
+  }
+  
+  .phone, .email, .address {
+    flex-direction: row; /* Apply flex-direction: row on larger mobile screens */
+    padding-bottom: 30px;
+  }
+  
+  .phone-content h5, .phone-content p, .email-content h5, .email-content p, .address-content h5, .address-content p{
+    font-size: 0.8rem;
+    }
+  
+  
+  .divider {
+    width: 60%; /* Adjust the width of the divider */
+    margin-bottom: 20px;
+  }
+  
+  .icon {
+    flex-direction: row; /* Apply flex-direction: row for icons */
+    gap: 15px;
+  }
+  
+  .info {
+    flex-direction: row; /* Change .info to row layout */
+    align-items: center; /* Align items in a row */
+  }
+  
+  .form {
+    margin-top: 0px;
+    margin-right: 20px;
+    width: 235%; /* Full-width form on smaller screens */
+    padding: 30px;
+  }
+  
+  .form h2 {
+    font-size: 1.5rem;
+  }
+  
+  .form p {
+    font-size: 0.8rem;
+  }
+  
+  .form button {
+    margin-left: 50%;
+    transform: translateX(-50%);
+    padding: 6px 35px;
+    font-size: 1rem;
+  }
+  
+  .form #name, .form #mail, .form #sms{
+    font-size: 0.8rem;
+  }
+  
+  
+  .map img{
+    width: 60%;
+    height: auto;
+  }
+
+  
+  .logo1 img {
+    width: 25%;
+    height: auto;
+}
+
+.contact{
+  padding-top: 20px;
+}
+
+
+/* Ensure .information remains a row */
+.information {
+  flex-direction: row; /* Keep row direction */
+  justify-content: space-between; /* Distribute items evenly */
+  align-items: center; /* Center vertically */
+  width: 100%; /* Ensure it takes full available width */
+}
+
+/* Adjust the button inside .btn */
+.btn button {
+  width: 90%; /* Button takes 90% of available space */
+  font-size: 1.4rem; /* Adjust font size */
+  margin-left: 0; /* Remove left margin */
+}
+
+/* Adjust email input fields to be fully responsive */
+.email-section input {
+  width: 100%; /* Ensure it takes full width */
+  margin-left: 0; /* Remove margin */
+  padding: 18px; /* Adjust padding for better fit */
+  box-sizing: border-box;
+}
+
+/* Adjust message input fields to be fully responsive */
+.message input {
+  width: 100%; /* Ensure it takes full width */
+  margin-left: 0; /* Remove margin */
+  padding: 18px; /* Adjust padding for better fit */
+  box-sizing: border-box;
+}
+
+/* Icons container */
+.icons {
+  margin-left: 0; /* Remove left margin */
+  padding: 12px; /* Adjust padding */
+  display: flex;
+  justify-content: center; /* Center the icons horizontally */
+}
+
+.icons a {
+  margin-left: 10px; /* Adjust space between icons */
+}
+
+.icons img {
+  width: 30px; /* Adjust icon size */
+  height: 30px; /* Maintain aspect ratio */
+}
 
 }
+
+@media only screen and (min-width: 1025px) and (max-width: 1200px) {
+
+.contact{
+  padding-top: 20px;
+}
+
+
+/* Ensure .information remains a row */
+.information {
+  flex-direction: row; /* Keep row direction */
+  justify-content: space-between; /* Distribute items evenly */
+  align-items: center; /* Center vertically */
+  width: 100%; /* Ensure it takes full available width */
+}
+
+/* Adjust the button inside .btn */
+.btn button {
+  width: 90%; /* Button takes 90% of available space */
+  font-size: 1.4rem; /* Adjust font size */
+  margin-left: 0; /* Remove left margin */
+}
+
+/* Adjust email input fields to be fully responsive */
+.email-section input {
+  width: 100%; /* Ensure it takes full width */
+  margin-left: 0; /* Remove margin */
+  padding: 18px; /* Adjust padding for better fit */
+  box-sizing: border-box;
+}
+
+/* Adjust message input fields to be fully responsive */
+.message input {
+  width: 100%; /* Ensure it takes full width */
+  margin-left: 0; /* Remove margin */
+  padding: 18px; /* Adjust padding for better fit */
+  box-sizing: border-box;
+}
+
+/* Icons container */
+.icons {
+  margin-left: 0; /* Remove left margin */
+  padding: 12px; /* Adjust padding */
+  display: flex;
+  justify-content: center; /* Center the icons horizontally */
+}
+
+.icons a {
+  margin-left: 10px; /* Adjust space between icons */
+}
+
+.icons img {
+  width: 30px; /* Adjust icon size */
+  height: 30px; /* Maintain aspect ratio */
+}
+
+}
+

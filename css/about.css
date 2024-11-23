@@ -490,7 +490,7 @@ input::placeholder {
 @media only screen and (max-width:480px){
 
   .travel{
-    top: 22%;
+    top: 11%;
     left: 5%;
   }
 
@@ -1164,40 +1164,125 @@ max-width: none; /* Remove max width for the button */
   padding-top: 20px;
 }
 
-.icons{
-margin-left: 6px;
-padding: 6px;
+
+/* Ensure .information remains a row */
+.information {
+  flex-direction: row; /* Keep row direction */
+  justify-content: space-between; /* Distribute items evenly */
+  align-items: center; /* Center vertically */
+  width: 100%; /* Ensure it takes full available width */
+}
+
+/* Adjust the button inside .btn */
+.btn button {
+  width: 90%; /* Button takes 90% of available space */
+  font-size: 1.4rem; /* Adjust font size */
+  margin-left: 0; /* Remove left margin */
+}
+
+/* Adjust email input fields to be fully responsive */
+.email-section input {
+  width: 100%; /* Ensure it takes full width */
+  margin-left: 0; /* Remove margin */
+  padding: 18px; /* Adjust padding for better fit */
+  box-sizing: border-box;
+}
+
+/* Adjust message input fields to be fully responsive */
+.message input {
+  width: 100%; /* Ensure it takes full width */
+  margin-left: 0; /* Remove margin */
+  padding: 18px; /* Adjust padding for better fit */
+  box-sizing: border-box;
+}
+
+/* Icons container */
+.icons {
+  margin-left: 0; /* Remove left margin */
+  padding: 12px; /* Adjust padding */
+  display: flex;
+  justify-content: center; /* Center the icons horizontally */
 }
 
 .icons a {
-  margin-left: 7px;
+  margin-left: 10px; /* Adjust space between icons */
 }
 
 .icons img {
-  width: 28px;
-  height: 28px;
+  width: 30px; /* Adjust icon size */
+  height: 30px; /* Maintain aspect ratio */
+}
+ 
 }
 
-.email-section input {
-  padding: 14px;
-  font-size: 0.7rem;
-  width: 160%;
-  margin-left: 2%;
+@media only screen and (min-width: 1025px) and (max-width: 1200px) {
+
+  .line3{
+    width: 80px;
+    left: 336px;
+  }
+
+  .price-number3{
+    margin-left: 31px;
+  }
+
+  
+  .logo1 img {
+    width: 25%;
+    height: auto;
 }
 
-.message input {
-  padding: 14px;
-  font-size: 0.7rem;
-  width: 150%;
-  margin-left: 64%;
+.contact{
+  padding-top: 20px;
 }
 
+
+/* Ensure .information remains a row */
+.information {
+  flex-direction: row; /* Keep row direction */
+  justify-content: space-between; /* Distribute items evenly */
+  align-items: center; /* Center vertically */
+  width: 100%; /* Ensure it takes full available width */
+}
+
+/* Adjust the button inside .btn */
 .btn button {
-  padding: 10px;
-  font-size: 1rem;
-  margin-left: 315%;
-  width: 95%;
-  margin-right: 0;
+  width: 90%; /* Button takes 90% of available space */
+  font-size: 1.4rem; /* Adjust font size */
+  margin-left: 0; /* Remove left margin */
+}
+
+/* Adjust email input fields to be fully responsive */
+.email-section input {
+  width: 100%; /* Ensure it takes full width */
+  margin-left: 0; /* Remove margin */
+  padding: 18px; /* Adjust padding for better fit */
+  box-sizing: border-box;
+}
+
+/* Adjust message input fields to be fully responsive */
+.message input {
+  width: 100%; /* Ensure it takes full width */
+  margin-left: 0; /* Remove margin */
+  padding: 18px; /* Adjust padding for better fit */
+  box-sizing: border-box;
+}
+
+/* Icons container */
+.icons {
+  margin-left: 0; /* Remove left margin */
+  padding: 12px; /* Adjust padding */
+  display: flex;
+  justify-content: center; /* Center the icons horizontally */
+}
+
+.icons a {
+  margin-left: 10px; /* Adjust space between icons */
+}
+
+.icons img {
+  width: 30px; /* Adjust icon size */
+  height: 30px; /* Maintain aspect ratio */
 }
 
 }
