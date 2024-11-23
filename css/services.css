@@ -160,10 +160,10 @@ main{
   width: 105%;
   margin-top: -5px;
   position: absolute;
-  bottom: 8px; /* Initially placed at the bottom */
+  bottom: 4%;
   left: 0;
-  transform: translateY(100%); /* Start below the container */
-  transition: transform 0.4s ease; /* Animate sliding up when hovered */
+  transform: translateY(100%);
+  transition: transform 0.4s ease;
 }
 
 
@@ -174,32 +174,29 @@ main{
   padding: 10px;
   position: absolute;
   bottom: 0; /* Positioned below the heading */
-  left: 6px;
+  left: 0;
   width: 105%;
-  height: 100%;
-  transition: transform 0.8s ease; /* Animate sliding up when hovered */
+  transform: translateY(0%);
+  transition: transform 0.4s ease, opacity 0.4s ease;
   opacity: 0; /* Make text invisible initially */ 
   font-size: 1.1rem;
 }
 
-
-/* Hover effect: Hide the image and slide in the heading and text */
+/* Hover effect */
 .image-item:hover .main-image img {
-  opacity: 0; /* Fade out the image */
+  opacity: 0.3; /* Reduce visibility for background image */
 }
 
 .image-item:hover h3 {
-  transform: translateY(-400%); /* Slide the heading up */
+  transform: translateY(-150%); /* Slide the title upwards */
 }
 
 .image-item:hover .ticket-text {
-  transform: translateY(19.3%); /* Slide the text up */
-  opacity: 1; /* Make text visible */
-  max-width: 100%;
+  transform: translateY(-10%); /* Slide the paragraph upwards */
+  opacity: 1; /* Make the paragraph visible */
   background-color: white;
   color: black;
 }
-
 
 .contact{
   text-align: center;
@@ -277,6 +274,8 @@ input::placeholder {
 }
 
 
+/* Responsive design */
+
 @media only screen and (min-width: 320px) and (max-width: 400px) {
   
   .front{
@@ -298,8 +297,8 @@ input::placeholder {
   }
   
   .navbar li a{
-    margin-left: 8px;
-    font-size: 7px;
+    margin-left: 10px;
+    font-size: 8px;
   }
   
   .contact-us{
@@ -359,28 +358,70 @@ input::placeholder {
   .service img {
     margin-top: 45px;
     margin-left: 80px;
+    height: 200px;
 }
 
 .service-content {
-  bottom: 30px;
-  left: 2%;
+  bottom: 12%;
+  left: 10%;
 }
 
 .service-content h2{
-  font-size: 3rem;
+  font-size: 2rem;
 }
 
 .service-content h4{
-  font-size: 3rem;
-  margin-top: -30px;
+  font-size: 2rem;
+  margin-top: -20px;
 }
 
 .service-content p{
-  font-size: 0.7rem;
+  font-size: 0.5rem;
   max-width: 70%;
 }
 
+.get-in a{
+  font-size: 0.8rem;
+  margin-left: 20px;
+}
 
+.services{
+  margin-top: 20px;
+}
+
+.image-item {
+  width: 20%;
+}
+
+.main-image{
+  width: 110%;
+}
+
+.square{
+  top: 12%;
+  left: 85%;
+  height: 24px;
+  width: 24px;
+}
+
+.square img {
+  width: 20px;
+  height: 20px;
+}
+
+.image-item h3{
+  font-size: 0.6rem;
+  padding: 2px;
+  width: 110%;
+  bottom: 6%;
+}
+
+.ticket-text{
+  font-size: 0.5rem;
+  bottom: -50px;
+  padding: 2px;
+  width: 110%;
+}
 
 .logo1 img {
   width: 30%;
@@ -428,4 +469,314 @@ width: 30%; /* Make button width responsive */
 max-width: none; /* Remove max width for the button */
 }
 
+}
+
+
+@media only screen and (min-width: 481px) and (max-width: 600px) {
+  
+  .front{
+    margin-top: 15px;
+  }
+  
+  .front img{
+    width: 13%;
+    height: auto;
+  }
+  
+  .navbar{
+    margin-top: 0px;
+    margin-left: 0px;
+  }
+  
+  .navbar li{
+    list-style: none;
+  }
+  
+  .navbar li a{
+    margin-left: 28px;
+    font-size: 11px;
+  }
+  
+  .contact-us{
+    margin-top: 0px;
+    margin-left: 0;
+    margin-right: 0px;
+  }
+  
+  .contact-us a{
+    border-radius: 20px;
+    padding: 2px 2px;
+    font-size: 11px;
+  }  
+}
+
+@media only screen and (min-width: 601px) and (max-width: 767px) {
+  
+  .front{
+    margin-top: 15px;
+  }
+  
+  .front img{
+    width: 13%;
+    height: auto;
+  }
+  
+  .navbar{
+    margin-top: 8px;
+    margin-left: 0px;
+  }
+  
+  .navbar li{
+    list-style: none;
+  }
+  
+  .navbar li a{
+    margin-left: 30px;
+    font-size: 13px;
+  }
+  
+  .contact-us{
+    margin-top: 8px;
+    margin-left: 0;
+    margin-right: 0px;
+  }
+  
+  .contact-us a{
+    border-radius: 20px;
+    padding: 2px 2px;
+    font-size: 13px;
+  }  
+}
+
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+
+  .service img {
+    margin-top: 45px;
+    margin-left: 80px;
+    height: 200px;
+}
+
+.service-content {
+  bottom: 12%;
+  left: 10%;
+}
+
+.service-content h2{
+  font-size: 2rem;
+}
+
+.service-content h4{
+  font-size: 2rem;
+  margin-top: -20px;
+}
+
+.service-content p{
+  font-size: 0.5rem;
+  max-width: 70%;
+}
+
+.get-in a{
+  font-size: 0.8rem;
+  margin-left: 20px;
+}
+
+.services{
+  margin-top: 20px;
+}
+
+.image-item {
+  width: 20%;
+}
+
+.main-image{
+  width: 110%;
+}
+
+.square{
+  top: 12%;
+  left: 85%;
+  height: 24px;
+  width: 24px;
+}
+
+.square img {
+  width: 20px;
+  height: 20px;
+}
+
+.image-item h3{
+  font-size: 0.6rem;
+  padding: 2px;
+  width: 110%;
+  bottom: 6%;
+}
+
+.ticket-text{
+  font-size: 0.5rem;
+  bottom: -50px;
+  padding: 2px;
+  width: 110%;
+}
+
+.logo1 img {
+  width: 30%;
+  height: auto;
+}
+
+.contact{
+padding: 10px;
+}
+
+.contact p{
+font-size: 0.8rem;
+}
+
+.icons {
+background-color: black;
+display: flex;
+justify-content: center;
+margin-left: 0;
+}
+
+.icons img {
+width: 30px;
+height: 30px;
+}
+
+.information{
+display: flex;
+flex-direction: column;
+margin-top: 5px;
+}
+
+.email-section input, .message input{
+padding: 14px;
+width: 72%;
+font-size: 0.7rem;
+margin-left: 14%;
+}
+
+.btn button {
+padding: 10px;
+font-size: 0.9rem;
+margin-left: 45%; /* Adjust right margin for alignment */
+width: 15%; /* Make button width responsive */
+max-width: none; /* Remove max width for the button */
+}
+
+.connect{
+padding-bottom: 60px;
+}
+
+}
+
+
+
+@media only screen and (min-width: 768px) and (max-width: 930px) {
+  
+  .front{
+    margin-top: 15px;
+  }
+  
+  .front img{
+    width: 15%;
+    height: auto;
+  }
+  
+  .navbar{
+    margin-top: 15px;
+    margin-left: 0px;
+  }
+  
+  .navbar li{
+    list-style: none;
+  }
+  
+  .navbar li a{
+    margin-left: 42px;
+    font-size: 14px;
+  }
+  
+  .contact-us{
+    margin-top: 15px;
+    margin-left: 0;
+    margin-right: 50px;
+  }
+  
+  .contact-us a{
+    border-radius: 20px;
+    padding: 5px 5px;
+    font-size: 14px;
+  }  
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .service img {
+    margin-top: 45px;
+    margin-left: 80px;
+    height: 200px;
+}
+
+.service-content {
+  bottom: 12%;
+  left: 10%;
+}
+
+.service-content h2{
+  font-size: 2rem;
+}
+
+.service-content h4{
+  font-size: 2rem;
+  margin-top: -20px;
+}
+
+.service-content p{
+  font-size: 0.5rem;
+  max-width: 70%;
+}
+
+.get-in a{
+  font-size: 0.8rem;
+  margin-left: 20px;
+}
+
+.services{
+  margin-top: 20px;
+}
+
+.image-item {
+  width: 20%;
+}
+
+.main-image{
+  width: 110%;
+}
+
+.square{
+  top: 12%;
+  left: 85%;
+  height: 24px;
+  width: 24px;
+}
+
+.square img {
+  width: 20px;
+  height: 20px;
+}
+
+.image-item h3{
+  font-size: 0.6rem;
+  padding: 2px;
+  width: 110%;
+  bottom: 6%;
+}
+
+.ticket-text{
+  font-size: 0.5rem;
+  bottom: -50px;
+  padding: 2px;
+  width: 110%;
+}
 }
