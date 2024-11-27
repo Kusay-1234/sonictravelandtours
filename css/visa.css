@@ -5,7 +5,6 @@
   font-family: "Poppins";
 }
 
-
 body{
   overflow-x: hidden;
 }
@@ -136,7 +135,6 @@ body{
   margin: 0 150px;
 }
 
-
 .contact{
   text-align: center;
   color: white;
@@ -168,48 +166,48 @@ padding-bottom: 5px;
 
 .icons{
   background-color: #3F4346;
-  margin-left: 20px;
-  padding: 16px;
+  margin-left: 10px;
+  display: flex;
 }
 
 .icons a{
-  margin-left: 20px;
+  padding: 10px;
 }
 
 .icons img{
-  width: 35px;
-  height: 35px;
+  width: 30px;
+  height: 30px;
 }
 
 input::placeholder {
   color: white;
 }
 
-.email-section input{
+input[placeholder="Enter your email address"]{
   background-color: #3F4346;
-  padding: 25px;
-  font-size: 1rem;
-  width: 150%;
+  font-size: 0.8rem;
+  width: 35%;
+  margin-left: 5px;
+  color: white;
+  padding: 5px;
+}
+
+input[placeholder="Write your message"]{
+  background-color: #1E2126;
+  padding: 5px;
+  font-size: 0.8rem;
+  width: 45%;
   margin-left: 5px;
   color: white;
 }
 
-.message input{
-  background-color: #1E2126;
-  padding: 25px;
-  font-size: 1rem;
-  width: 130%;
-  margin-left: 140px;
-  color: white;
-}
-
-.btn button{
+.send{
   border: 2px solid white;
-  padding: 18px;
-  font-size: 1.5rem;
+  padding: 15px;
+  font-size: 0.9rem;
   background-color: black;
   color: white;
-  margin-left: 265px;
+  margin-left: 5px;
   cursor: pointer;
 }
 
@@ -363,7 +361,7 @@ input::placeholder {
   padding: 2px 10px;
   font-size: 0.7rem;
   margin-bottom: 0;
-  margin-left: 37%;
+  margin-left: 32%;
   width: 35%;
   max-width: none;
 }
@@ -382,10 +380,6 @@ input::placeholder {
   font-size: 0.8rem;
 }
 
-.icons img {
-  width: 30px;
-  height: 30px;
-}
 
 .contact{
 padding: 10px;
@@ -397,14 +391,6 @@ flex-direction: column;
 margin-top: 20px;
 }
 
-.email-section input, .message input{
-padding: 16px;
-width: 92%;
-font-size: 0.6rem;
-margin-left: 15px;
-}
-
-
 .icons{
 background-color: black;
 margin-left: 0;
@@ -412,16 +398,37 @@ display: flex;
 justify-content: center;
 }
 
-.btn button {
-padding: 10px;
-font-size: 0.9rem;
-margin-left: 32%; /* Adjust right margin for alignment */
-width: 30%; /* Make button width responsive */
-max-width: none; /* Remove max width for the button */
-}
+.icons img {
+  width: 25px;
+  height: 25px;
+  }
+  
+  input[placeholder="Enter your email address"] {
+    font-size: 0.6rem;
+    width: 78%;
+    margin-left: 40px;
+    padding: 10px;
+    margin-bottom: 5px;
+  }
+  
+  input[placeholder="Write your message"] {
+    font-size: 0.6rem;
+    width: 78%;
+    margin-left: 40px;
+    padding: 10px;
+  }
+  
+  .send{
+    padding: 5px;
+    font-size: 0.8rem;
+    margin-left: 40%; /* Adjust right margin for alignment */
+    width: 20%; /* Make button width responsive */
+    max-width: none; /* Remove max width for the button */
+  }
 
 .connect h6{
   margin-top: 40px;
+  font-size: 0.4rem;
 }
 
 .power{
@@ -525,7 +532,6 @@ max-width: none; /* Remove max width for the button */
   bottom: 140px;
 }
 
-
 .container{
   bottom: 75px;
 }
@@ -578,46 +584,39 @@ padding: 10px;
 .contact p{
 font-size: 0.8rem;
 }
-
 .icons {
-background-color: black;
-display: flex;
-justify-content: center;
-margin-left: 0;
-}
-
-.icons img {
-width: 30px;
-height: 30px;
-}
-
-.information{
-display: flex;
-flex-direction: column;
-margin-top: 5px;
-}
-
-.email-section input, .message input{
-padding: 14px;
-width: 72%;
-font-size: 0.7rem;
-margin-left: 14%;
-}
-
-.btn button {
-padding: 10px;
-font-size: 0.9rem;
-margin-left: 45%; /* Adjust right margin for alignment */
-width: 15%; /* Make button width responsive */
-max-width: none; /* Remove max width for the button */
-}
-
+  height: 42px;
+  }
+  
+  .icons a{
+      padding: 5px;
+      padding-top: 8px;
+  }
+  
+  .icons img {
+  width: 20px;
+  height: 20px;
+  }
+  
+  input[placeholder="Enter your email address"], input[placeholder="Write your message"]{
+  padding: 5px;
+  font-size: 0.5rem;
+  height: 42px;
+  }
+  
+  .send{
+  padding: 9px;
+  font-size: 0.8rem;
+  margin-right: 5px;
+  }
+  
 .connect{
 padding-bottom: 5px;
 }
 
 .connect h6{
   margin-top: 50px;
+  font-size: 0.5rem;
 }
 
 .power{
@@ -684,7 +683,6 @@ padding-bottom: 5px;
   bottom: 190px;
 }
 
-
 .container{
   bottom: 116px;
 }
@@ -724,7 +722,6 @@ padding-bottom: 5px;
   margin: -35px 80px !important;
 }
 
-
 .logo1 img {
   width: 25%;
   height: auto;
@@ -733,58 +730,34 @@ padding-bottom: 5px;
 .contact{
 padding-top: 20px;
 }
-
-
-/* Ensure .information remains a row */
-.information {
-flex-direction: row; /* Keep row direction */
-justify-content: space-between; /* Distribute items evenly */
-align-items: center; /* Center vertically */
-width: 100%; /* Ensure it takes full available width */
-}
-
-/* Adjust the button inside .btn */
-.btn button {
-width: 90%; /* Button takes 90% of available space */
-font-size: 1.4rem; /* Adjust font size */
-margin-left: 0; /* Remove left margin */
-}
-
-/* Adjust email input fields to be fully responsive */
-.email-section input {
-width: 100%; /* Ensure it takes full width */
-margin-left: 0; /* Remove margin */
-padding: 18px; /* Adjust padding for better fit */
-box-sizing: border-box;
-}
-
-/* Adjust message input fields to be fully responsive */
-.message input {
-width: 100%; /* Ensure it takes full width */
-margin-left: 0; /* Remove margin */
-padding: 18px; /* Adjust padding for better fit */
-box-sizing: border-box;
-}
-
-/* Icons container */
-.icons {
-margin-left: 0; /* Remove left margin */
-padding: 12px; /* Adjust padding */
-display: flex;
-justify-content: center; /* Center the icons horizontally */
-}
-
 .icons a {
-margin-left: 10px; /* Adjust space between icons */
+  padding: 7px;
+  padding-top: 14px;
 }
 
 .icons img {
-width: 30px; /* Adjust icon size */
-height: 30px; /* Maintain aspect ratio */
+width: 25px;
+height: 25px;
+}
+
+
+input[placeholder="Enter your email address"] {
+font-size: 0.6rem;
+}
+
+
+input[placeholder="Write your message"] {
+font-size: 0.6rem;
+}
+
+.send{
+font-size: 0.8rem;
+margin-right: 5px;
 }
 
 .connect h6{
   margin-top: 50px;
+  font-size: 0.5rem;
 }
 
 .power{
@@ -811,7 +784,6 @@ height: 30px; /* Maintain aspect ratio */
 .visa-content{
   bottom: 190px;
 }
-
 
 .container{
   bottom: 116px;
@@ -856,52 +828,39 @@ height: 30px; /* Maintain aspect ratio */
   padding-top: 20px;
 }
 
-
-/* Ensure .information remains a row */
-.information {
-  flex-direction: row; /* Keep row direction */
-  justify-content: space-between; /* Distribute items evenly */
-  align-items: center; /* Center vertically */
-  width: 100%; /* Ensure it takes full available width */
-}
-
-/* Adjust the button inside .btn */
-.btn button {
-  width: 90%; /* Button takes 90% of available space */
-  font-size: 1.4rem; /* Adjust font size */
-  margin-left: 0; /* Remove left margin */
-}
-
-/* Adjust email input fields to be fully responsive */
-.email-section input {
-  width: 100%; /* Ensure it takes full width */
-  margin-left: 0; /* Remove margin */
-  padding: 18px; /* Adjust padding for better fit */
-  box-sizing: border-box;
-}
-
-/* Adjust message input fields to be fully responsive */
-.message input {
-  width: 100%; /* Ensure it takes full width */
-  margin-left: 0; /* Remove margin */
-  padding: 18px; /* Adjust padding for better fit */
-  box-sizing: border-box;
-}
-
-/* Icons container */
-.icons {
-  margin-left: 0; /* Remove left margin */
-  padding: 12px; /* Adjust padding */
-  display: flex;
-  justify-content: center; /* Center the icons horizontally */
-}
-
 .icons a {
-  margin-left: 10px; /* Adjust space between icons */
+  padding: 7px;
+  padding-top: 14px;
 }
 
 .icons img {
-  width: 30px; /* Adjust icon size */
-  height: 30px; /* Maintain aspect ratio */
+width: 25px;
+height: 25px;
 }
+
+
+input[placeholder="Enter your email address"] {
+font-size: 0.6rem;
+}
+
+
+input[placeholder="Write your message"] {
+font-size: 0.6rem;
+}
+
+.send{
+font-size: 0.8rem;
+margin-right: 5px;
+}
+
+
+.connect h6{
+  margin-top: 50px;
+  font-size: 0.5rem;
+}
+
+.power{
+  padding-top: 70px;
+}
+
 }
