@@ -346,7 +346,7 @@ body{
 
 .connect{
 background-color: black;
-padding-bottom: 80px;
+padding-bottom: 5px;
 }
 
 .logo1{
@@ -408,6 +408,24 @@ input::placeholder {
   margin-left: 265px;
   cursor: pointer;
 }
+
+.connect h6{
+  text-align: center;
+  color: white;
+  margin-top: 100px;
+}
+
+.power{
+  padding-top: 100px;
+  display: flex;
+  justify-content: center;
+}
+
+.power a{
+  color: black;
+  text-decoration: none;
+}
+
 
 
 @media only screen and (min-width: 320px) and (max-width: 400px) {
@@ -656,6 +674,14 @@ input::placeholder {
     margin-left: 32%; /* Adjust right margin for alignment */
     width: 30%; /* Make button width responsive */
     max-width: none; /* Remove max width for the button */
+  }
+
+  .connect h6{
+    margin-top: 40px;
+  }
+
+  .power{
+    padding-top: 60px;
   }
   
   }
@@ -937,7 +963,15 @@ max-width: none; /* Remove max width for the button */
 }
 
 .connect{
-  padding-bottom: 60px;
+  padding-bottom: 5px;
+}
+
+.connect h6{
+  margin-top: 50px;
+}
+
+.power{
+  padding-top: 70px;
 }
 
 }
@@ -1212,6 +1246,14 @@ max-width: none; /* Remove max width for the button */
   width: 30px; /* Adjust icon size */
   height: 30px; /* Maintain aspect ratio */
 }
+
+.connect h6{
+  margin-top: 50px;
+}
+
+.power{
+  padding-top: 70px;
+}
  
 }
 
@@ -1285,4 +1327,17 @@ max-width: none; /* Remove max width for the button */
   height: 30px; /* Maintain aspect ratio */
 }
 
+}
+
+
+@media only screen and (min-width: 1025px) and (max-width: 1440px) {
+  .follow-us{
+    right: 0;
+    padding: 5px;
+  }
+
+  .follow-us img{
+    height: 25px;
+    width: 25px;
+  }
 }

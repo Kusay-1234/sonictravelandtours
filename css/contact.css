@@ -206,7 +206,7 @@ input[type="text"]:focus {
 }
 
 .bg3{
-  background-color: rebeccapurple;
+  background-color: #EFEFEF;
 }
 
 .map{
@@ -234,7 +234,7 @@ input[type="text"]:focus {
 
 .connect{
 background-color: black;
-padding-bottom: 80px;
+padding-bottom: 5px;
 }
 
 .logo1{
@@ -284,6 +284,7 @@ input::placeholder {
   font-size: 1rem;
   width: 130%;
   margin-left: 140px;
+  color: white;
 }
 
 .btn button{
@@ -294,6 +295,23 @@ input::placeholder {
   color: white;
   margin-left: 265px;
   cursor: pointer;
+}
+
+.connect h6{
+  text-align: center;
+  color: white;
+  margin-top: 100px;
+}
+
+.power{
+  padding-top: 100px;
+  display: flex;
+  justify-content: center;
+}
+
+.power a{
+  color: black;
+  text-decoration: none;
 }
 
 #name::placeholder, #mail::placeholder, #sms::placeholder{
@@ -524,6 +542,15 @@ input[type="text"] {
   max-width: none; /* Remove max width for the button */
   }
 
+  .connect h6{
+    margin-top: 40px;
+  }
+
+  .power{
+    padding-top: 60px;
+  }
+  
+
 }
 
 
@@ -752,7 +779,15 @@ max-width: none; /* Remove max width for the button */
 }
 
 .connect{
-padding-bottom: 60px;
+padding-bottom: 5px;
+}
+
+.connect h6{
+  margin-top: 50px;
+}
+
+.power{
+  padding-top: 70px;
 }
 
 }
@@ -954,6 +989,14 @@ padding-bottom: 60px;
 .icons img {
   width: 30px; /* Adjust icon size */
   height: 30px; /* Maintain aspect ratio */
+}
+
+.connect h6{
+  margin-top: 50px;
+}
+
+.power{
+  padding-top: 70px;
 }
 
 }

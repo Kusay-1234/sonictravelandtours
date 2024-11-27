@@ -323,7 +323,7 @@ h4 {
 
 .connect{
 background-color: black;
-padding-bottom: 80px;
+padding-bottom: 5px;
 }
 
 .logo1{
@@ -373,6 +373,7 @@ input::placeholder {
   font-size: 1rem;
   width: 130%;
   margin-left: 140px;
+  color: white;
 }
 
 .btn button{
@@ -384,6 +385,25 @@ input::placeholder {
   margin-left: 265px;
   cursor: pointer;
 }
+
+.connect h6{
+  text-align: center;
+  color: white;
+  margin-top: 100px;
+}
+
+.power{
+  padding-top: 100px;
+  display: flex;
+  justify-content: center;
+}
+
+.power a{
+  color: black;
+  text-decoration: none;
+}
+
+
 
 
 @media only screen and (min-width: 320px) and (max-width: 400px) {
@@ -462,18 +482,20 @@ input::placeholder {
   }  
 }
 
-
-
 @media only screen and (max-width: 480px) {
 
   body{
+    overflow-x: hidden;
+  }
+
+  main{
     overflow-x: hidden;
   }
   
     /* Make the plan-trip image smaller and align */
     .plan-trip img {
       width: 30%; /* Decrease width to fit on small screens */
-      margin-right: -16px;
+      margin-right: -22px;
       margin-top: -30px;
       position: static;
     }
@@ -519,69 +541,810 @@ input::placeholder {
       object-fit: cover;
     }
   
-    /* Adjusting circle image size */
-    .circle-overlay {
-      width: 28px; /* Smaller circle size */
-      height: 28px;
-      top: 80%; /* Adjust position slightly */
+    .circle-overlay{
+      height: 23px;
+      width: 23px;
     }
-  
-    .circle-overlay img {
-      padding: 0;
-      width: 18px;
-      height: 18px;
+
+    .circle-overlay img{
+      width: 20px;
+      height: 22px;
+      padding: 2px;
     }
   
     h4 {
       font-size: 0.8rem;
       margin-top: 0px;
       margin-bottom: 0;
+    }
+
+    .sonic-journey{
+      display: flex;
+      flex-direction: column;
+    }
+
+    .sonic-journey img {
+      width: 100%;
   }
 
-  
-  .logo1 img {
-    width: 30%;
-    height: auto;
+  .journey-content {
+    margin-top: 0;
+    margin-left: 14px;
 }
 
-.contact{
-  padding: 10px;
+.journey-content h4 {
+  font-size: 1rem;
+  margin-bottom: 0px;
+  margin-top: 0;
 }
 
-.contact p{
+.journey-content p {
+  font-size: 0.6rem;
+}
+
+.numbers {
+  margin-top: 20px;
+  margin-left: -10px;
+  display: flex;
+  justify-content: center;
+}
+
+.our-exp, .certificate, .year-exp {
+  border-radius: 10px;
+  padding: 5px 10px;
+  margin-left: 15px;
+}
+
+.numbers h3 {
+  font-size: 1rem;
+}
+
+.numbers p {
+  font-size: 0.5rem;
+}
+
+.best-features{
+  display: flex;
+  flex-direction: column;
+}
+
+.what-we-give {
+  margin-left: 12px;
+  margin-right: 10px;
+  margin-top: 20px;
+}
+
+.with-arrow{
+  font-size: 0.6rem !important;
+}
+
+.with-arrow::before{
+  right: -20px;
+  top: -8px;
+}
+
+.what-we-give h3, .what-we-give h5{
   font-size: 0.8rem;
 }
 
-.icons img {
+.what-we-give p {
+  font-size: 0.5rem;
+}
+
+.what-features {
+  margin-top: 20px;
+  margin-left: 7px;
+}
+
+.square {
   width: 30px;
   height: 30px;
 }
 
+.choices h3, .guidance h3, .booking h3 {
+  font-size: 0.5rem;
+  margin-bottom: 0;
+}
+
+
+.choices p, .guidance p, .booking p {
+  font-size: 0.4rem;
+}
+
+.guidance {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.square img {
+    padding: 2px;
+    height: 25px;
+    width: 25px;
+}
+
+.logo1{
+  margin-top: 50px;
+}
+
+
+.logo1 img {
+  width: 30%;
+  height: auto;
+}
+
+.contact{
+padding: 10px;
+}
+
+.contact p{
+font-size: 0.8rem;
+}
+
+.icons img {
+width: 30px;
+height: 30px;
+}
+
 .information{
-  display: flex;
-  flex-direction: column;
-  margin-top: 20px;
+display: flex;
+flex-direction: column;
+margin-top: 20px;
 }
 
 .email-section input, .message input{
-  padding: 16px;
-  width: 92%;
-  font-size: 0.6rem;
-  margin-left: 15px;
+padding: 16px;
+width: 92%;
+font-size: 0.6rem;
+margin-left: 15px;
 }
 
 
 .icons{
-  background-color: black;
-  margin-left: 5%;
+background-color: black;
+margin-left: 0;
+display: flex;
+justify-content: center;
 }
 
 .btn button {
-  padding: 10px;
-  font-size: 0.9rem;
-  margin-left: 32%; /* Adjust right margin for alignment */
-  width: 30%; /* Make button width responsive */
-  max-width: none; /* Remove max width for the button */
+padding: 10px;
+font-size: 0.9rem;
+margin-left: 32%; /* Adjust right margin for alignment */
+width: 30%; /* Make button width responsive */
+max-width: none; /* Remove max width for the button */
 }
+
+.connect h6{
+  margin-top: 40px;
+}
+
+.power{
+  padding-top: 60px;
+}
+
+}
+
+
+
+@media only screen and (min-width: 481px) and (max-width: 600px) {
   
+  .front{
+    margin-top: 15px;
+  }
+  
+  .front img{
+    width: 13%;
+    height: auto;
+  }
+  
+  .navbar{
+    margin-top: 0px;
+    margin-left: 0px;
+  }
+  
+  .navbar li{
+    list-style: none;
+  }
+  
+  .navbar li a{
+    margin-left: 28px;
+    font-size: 11px;
+  }
+  
+  .contact-us{
+    margin-top: 0px;
+    margin-left: 0;
+    margin-right: 0px;
+  }
+  
+  .contact-us a{
+    border-radius: 20px;
+    padding: 2px 2px;
+    font-size: 11px;
+  }  
+}
+
+@media only screen and (min-width: 601px) and (max-width: 767px) {
+  
+  .front{
+    margin-top: 15px;
+  }
+  
+  .front img{
+    width: 13%;
+    height: auto;
+  }
+  
+  .navbar{
+    margin-top: 8px;
+    margin-left: 0px;
+  }
+  
+  .navbar li{
+    list-style: none;
+  }
+  
+  .navbar li a{
+    margin-left: 30px;
+    font-size: 13px;
+  }
+  
+  .contact-us{
+    margin-top: 8px;
+    margin-left: 0;
+    margin-right: 0px;
+  }
+  
+  .contact-us a{
+    border-radius: 20px;
+    padding: 2px 2px;
+    font-size: 13px;
+  }  
+}
+
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+
+  body{
+    overflow-x: hidden;
+  }
+
+  main{
+    overflow-x: hidden;
+  }
+  
+    /* Make the plan-trip image smaller and align */
+    .plan-trip img {
+      width: 30%; /* Decrease width to fit on small screens */
+      margin-right: -35px;
+      margin-top: -65px;
+      position: static;
+    }
+
+    .plan {
+      margin-left: 15px;
+      margin-top: 0px;
+  }
+  
+    /* Adjust the text in .plan */
+    .plan p {
+      font-size: 1.5rem; /* Slightly smaller text */
+      margin-top: 15px;
+    }
+  
+    .plan h5 {
+      font-size: 1.2rem; /* Slightly smaller text */
+    }
+  
+    /* Adjust the perfect-holiday section */
+    .perfect-holiday {
+      margin-top: 0;
+    }
+
+    .circle-overlay{
+      height: 32px;
+      width: 32px;
+    }
+
+    .circle-overlay img{
+      width: 30px;
+      height: 30px;
+      padding: 5px;
+    }
+
+    h4{
+      font-size: 1rem;
+    }
+
+    .sonic-journey img {
+      width: 30%;
+  }
+
+  .journey-content {
+    margin-top: 50px;
+    margin-left: 14px;
+}
+
+.journey-content h4 {
+  font-size: 1rem;
+  margin-bottom: 0px;
+  margin-top: 0;
+}
+
+.journey-content p {
+  font-size: 0.6rem;
+}
+
+.numbers {
+  margin-top: 20px;
+  margin-left: -10px;
+  display: flex;
+  justify-content: center;
+}
+
+.our-exp, .certificate, .year-exp {
+  border-radius: 10px;
+  padding: 5px 10px;
+  margin-left: 15px;
+}
+
+.numbers h3 {
+  font-size: 1.2rem;
+}
+
+.numbers p {
+  font-size: 0.6rem;
+}
+
+.best-features{
+  display: flex;
+  flex-direction: row;
+}
+
+.what-we-give {
+  margin-left: 12px;
+  margin-right: 10px;
+  margin-top: 20px;
+}
+
+.with-arrow{
+  font-size: 0.6rem !important;
+}
+
+.with-arrow::before{
+  right: -20px;
+  top: -8px;
+}
+
+.what-we-give h3, .what-we-give h5{
+  font-size: 0.8rem;
+}
+
+.what-we-give p {
+  font-size: 0.5rem;
+}
+
+.what-features {
+  margin-top: 60px;
+  margin-left: 7px;
+}
+
+.square {
+  width: 30px;
+  height: 30px;
+}
+
+.choices h3, .guidance h3, .booking h3 {
+  font-size: 0.5rem;
+  margin-bottom: 0;
+}
+
+
+.choices p, .guidance p, .booking p {
+  font-size: 0.4rem;
+}
+
+.guidance {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.square img {
+    padding: 2px;
+    height: 25px;
+    width: 25px;
+}
+
+
+.logo1 img {
+  width: 30%;
+  height: auto;
+}
+
+.contact{
+padding: 10px;
+}
+
+.contact p{
+font-size: 0.8rem;
+}
+
+.icons {
+background-color: black;
+display: flex;
+justify-content: center;
+margin-left: 0;
+}
+
+.icons img {
+width: 30px;
+height: 30px;
+}
+
+.information{
+display: flex;
+flex-direction: column;
+margin-top: 5px;
+}
+
+.email-section input, .message input{
+padding: 14px;
+width: 72%;
+font-size: 0.7rem;
+margin-left: 14%;
+}
+
+.btn button {
+padding: 10px;
+font-size: 0.9rem;
+margin-left: 45%; /* Adjust right margin for alignment */
+width: 15%; /* Make button width responsive */
+max-width: none; /* Remove max width for the button */
+}
+
+.connect{
+padding-bottom: 5px;
+}
+
+.connect h6{
+  margin-top: 50px;
+}
+
+.power{
+  padding-top: 70px;
+}
+
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 930px) {
+  
+  .front{
+    margin-top: 15px;
+  }
+  
+  .front img{
+    width: 15%;
+    height: auto;
+  }
+  
+  .navbar{
+    margin-top: 15px;
+    margin-left: 0px;
+  }
+  
+  .navbar li{
+    list-style: none;
+  }
+  
+  .navbar li a{
+    margin-left: 42px;
+    font-size: 14px;
+  }
+  
+  .contact-us{
+    margin-top: 15px;
+    margin-left: 0;
+    margin-right: 50px;
+  }
+  
+  .contact-us a{
+    border-radius: 20px;
+    padding: 5px 5px;
+    font-size: 14px;
+  }  
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  
+  body{
+    overflow-x: hidden;
+  }
+
+  main{
+    overflow-x: hidden;
+  }
+  
+    /* Make the plan-trip image smaller and align */
+    .plan-trip img {
+      width: 30%; /* Decrease width to fit on small screens */
+      margin-right: -48px;
+      margin-top: -65px;
+      position: static;
+    }
+
+    .plan {
+      margin-left: 25px;
+      margin-top: 0px;
+  }
+  
+    /* Adjust the text in .plan */
+    .plan p {
+      font-size: 1.8rem; /* Slightly smaller text */
+      margin-top: 25px;
+    }
+  
+    .plan h5 {
+      font-size: 1.5rem; /* Slightly smaller text */
+    }
+  
+    /* Adjust the perfect-holiday section */
+    .perfect-holiday {
+      margin-top: 0;
+      gap: 0;
+    }
+
+    .main-image img {
+      width: 104%;
+    }
+
+    .circle-overlay{
+      height: 42px;
+      width: 42px;
+    }
+
+    .circle-overlay img{
+      width: 38px;
+      height: 38px;
+      padding: 4px;
+    }
+
+    h4{
+      font-size: 1.2rem;
+    }
+
+    .sonic-journey img {
+      width: 50%;
+  }
+
+  .journey-content {
+    margin-top: 60px;
+    margin-left: 0px;
+}
+
+.journey-content h4 {
+  font-size: 1.3rem;
+  margin-bottom: 0px;
+  margin-top: 0;
+}
+
+.journey-content p {
+  font-size: 0.7rem;
+}
+
+.numbers {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.our-exp, .certificate, .year-exp {
+  border-radius: 15px;
+  padding: 10px 15px;
+  margin-left: 15px;
+}
+
+.numbers h3 {
+  font-size: 1.3rem;
+}
+
+.numbers p {
+  font-size: 0.7rem;
+}
+
+.best-features{
+  display: flex;
+  flex-direction: row;
+}
+
+.what-we-give {
+  margin-left: 12px;
+  margin-right: 10px;
+  margin-top: 20px;
+}
+
+.with-arrow{
+  font-size: 0.9rem !important;
+}
+
+.with-arrow::before{
+  right: -30px;
+  top: -10px;
+}
+
+.what-we-give h3, .what-we-give h5{
+  font-size: 1.2rem;
+}
+
+.what-we-give p {
+  font-size: 0.6rem;
+}
+
+.what-features {
+  margin-top: 60px;
+  margin-left: 7px;
+}
+
+.square {
+  width: 35px;
+  height: 35px;
+}
+
+.choices h3, .guidance h3, .booking h3 {
+  font-size: 0.7rem;
+  margin-bottom: 0;
+}
+
+
+.choices p, .guidance p, .booking p {
+  font-size: 0.5rem;
+}
+
+.guidance {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.square img {
+    padding: 2px;
+    height: 30px;
+    width: 30px;
+}
+
+.logo1 img {
+  width: 25%;
+  height: auto;
+}
+
+.contact{
+padding-top: 20px;
+}
+
+
+/* Ensure .information remains a row */
+.information {
+flex-direction: row; /* Keep row direction */
+justify-content: space-between; /* Distribute items evenly */
+align-items: center; /* Center vertically */
+width: 100%; /* Ensure it takes full available width */
+}
+
+/* Adjust the button inside .btn */
+.btn button {
+width: 90%; /* Button takes 90% of available space */
+font-size: 1.4rem; /* Adjust font size */
+margin-left: 0; /* Remove left margin */
+}
+
+/* Adjust email input fields to be fully responsive */
+.email-section input {
+width: 100%; /* Ensure it takes full width */
+margin-left: 0; /* Remove margin */
+padding: 18px; /* Adjust padding for better fit */
+box-sizing: border-box;
+}
+
+/* Adjust message input fields to be fully responsive */
+.message input {
+width: 100%; /* Ensure it takes full width */
+margin-left: 0; /* Remove margin */
+padding: 18px; /* Adjust padding for better fit */
+box-sizing: border-box;
+}
+
+/* Icons container */
+.icons {
+margin-left: 0; /* Remove left margin */
+padding: 12px; /* Adjust padding */
+display: flex;
+justify-content: center; /* Center the icons horizontally */
+}
+
+.icons a {
+margin-left: 10px; /* Adjust space between icons */
+}
+
+.icons img {
+width: 30px; /* Adjust icon size */
+height: 30px; /* Maintain aspect ratio */
+}
+
+.connect h6{
+margin-top: 50px;
+}
+
+.power{
+padding-top: 70px;
+}
+
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1200px) {
+  .perfect-holiday {
+    gap: 10px;
+    margin-top: -40px;
+}
+
+.sonic-journey img {
+  width: 38%;
+}
+
+ 
+.logo1 img {
+  width: 25%;
+  height: auto;
+}
+
+.contact{
+padding-top: 20px;
+}
+
+
+/* Ensure .information remains a row */
+.information {
+flex-direction: row; /* Keep row direction */
+justify-content: space-between; /* Distribute items evenly */
+align-items: center; /* Center vertically */
+width: 100%; /* Ensure it takes full available width */
+}
+
+/* Adjust the button inside .btn */
+.btn button {
+width: 90%; /* Button takes 90% of available space */
+font-size: 1.4rem; /* Adjust font size */
+margin-left: 0; /* Remove left margin */
+}
+
+/* Adjust email input fields to be fully responsive */
+.email-section input {
+width: 100%; /* Ensure it takes full width */
+margin-left: 0; /* Remove margin */
+padding: 18px; /* Adjust padding for better fit */
+box-sizing: border-box;
+}
+
+/* Adjust message input fields to be fully responsive */
+.message input {
+width: 100%; /* Ensure it takes full width */
+margin-left: 0; /* Remove margin */
+padding: 18px; /* Adjust padding for better fit */
+box-sizing: border-box;
+}
+
+/* Icons container */
+.icons {
+margin-left: 0; /* Remove left margin */
+padding: 12px; /* Adjust padding */
+display: flex;
+justify-content: center; /* Center the icons horizontally */
+}
+
+.icons a {
+margin-left: 10px; /* Adjust space between icons */
+}
+
+.icons img {
+width: 30px; /* Adjust icon size */
+height: 30px; /* Maintain aspect ratio */
+}
 }
