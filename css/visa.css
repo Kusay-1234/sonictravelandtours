@@ -217,14 +217,8 @@ input[placeholder="Write your message"]{
   margin-top: 100px;
 }
 
-.power{
-  padding-top: 100px;
-  display: flex;
-  justify-content: center;
-}
-
 .power a{
-  color: black;
+  color: royalblue;
   text-decoration: none;
 }
 
@@ -427,12 +421,8 @@ justify-content: center;
   }
 
 .connect h6{
-  margin-top: 40px;
+  margin-top: 50px;
   font-size: 0.4rem;
-}
-
-.power{
-  padding-top: 60px;
 }
 
 }
@@ -615,12 +605,10 @@ padding-bottom: 5px;
 }
 
 .connect h6{
-  margin-top: 50px;
+  margin-top: 60px;
   font-size: 0.5rem;
 }
 
-.power{
-  padding-top: 70px;
 }
 
 
@@ -756,12 +744,8 @@ margin-right: 5px;
 }
 
 .connect h6{
-  margin-top: 50px;
+  margin-top: 70px;
   font-size: 0.5rem;
-}
-
-.power{
-  padding-top: 70px;
 }
 
 }
@@ -855,12 +839,8 @@ margin-right: 5px;
 
 
 .connect h6{
-  margin-top: 50px;
+  margin-top: 80px;
   font-size: 0.5rem;
-}
-
-.power{
-  padding-top: 70px;
 }
 
 }

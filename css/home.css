@@ -53,25 +53,21 @@ body{
   padding: 5px 10px;
 }
 
-.video-container {
-  background-color: transparent;
-  background-image: linear-gradient(180deg, #FFFFFF 15%, #FFFFFF00 49%);
-  opacity: 1;
-  transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
-}
-
 video {
   width: 100%;
   height: auto;
-  background-color: transparent;
-  background-image: linear-gradient(180deg, #FFFFFF 15%, #FFFFFF00 49%);
-  opacity: 1;
-  transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+}
+
+.shadow {
+  box-shadow: 0 -50px 15px 80px rgba(255, 255, 255, 0.5),
+              0  -50px 25px 80px rgba(255, 255, 255, 0.5);
+  position: relative;
+  top: 70px;
 }
 
 .gradient{
   background: linear-gradient(to bottom, #CDCDCD, #676767);
-
+  margin-top: -10px;
 }
 
 .plan-trip{
@@ -93,7 +89,7 @@ video {
 
 .plan-trip p{
   font-size: 1.5rem;
-  color: #008515;
+  color: rgb(0, 133, 21);
   font-family: "Kaushan Script", cursive;
 }
 
@@ -115,6 +111,7 @@ video {
   position: relative;
   width: 250px;
   text-align: center;
+  perspective: 1000px; /* Adds 3D space for the flip effect */
 }
 
 /* The main large image */
@@ -123,7 +120,14 @@ video {
   width: 100%;
   overflow: hidden; /* Ensure the circle image is clipped to the boundaries */
   border-radius: 10px;
+  transform-style: preserve-3d;
+  transition: transform 0.6s;
 }
+
+  /* When hovering over the container, the image will flip */
+    .main-image:hover {
+      transform: rotateY(180deg); /* Flip the image on the Y-axis */
+  }
 
 .main-image img {
   width: 100%;
@@ -146,7 +150,7 @@ video {
 }
 
 .circle-overlay:hover{
-  background-color: #DBFFD4;
+  background-color: rgb(219, 255, 212);
 }
 
 .circle-img {
@@ -223,7 +227,7 @@ h4 {
   left: -100%;
   width: 100%;
   height: 100%;
-  background: #FFB1B1;
+  background: rgba(255, 177, 177, 0.7);
   transition: left 0.9s ease;
   z-index: -1;
 }
@@ -287,6 +291,11 @@ h4 {
   height: 50px;
   border-radius: 5px;
   background-color: lightgreen;
+  transition: transform 0.3s ease;  /* Smooth transition for the zoom effect */
+}
+
+.square:hover{
+  transform: scale(1.2); /* Zoom in by 20% on hover */
 }
 
 .square img{
@@ -383,25 +392,16 @@ input[placeholder="Write your message"]{
   cursor: pointer;
 }
 
-
 .connect h6{
   text-align: center;
   color: white;
   margin-top: 100px;
 }
 
-.power{
-  padding-top: 100px;
-  display: flex;
-  justify-content: center;
-}
-
 .power a{
-  color: black;
+  color: royalblue;
   text-decoration: none;
 }
-
-
 
 
 @media only screen and (min-width: 320px) and (max-width: 400px) {
@@ -719,12 +719,8 @@ justify-content: center;
 }
 
 .connect h6{
-  margin-top: 40px;
+  margin-top: 50px;
   font-size: 0.4rem;
-}
-
-.power{
-  padding-top: 60px;
 }
 
 }
@@ -1004,12 +1000,8 @@ padding-bottom: 5px;
 }
 
 .connect h6{
-  margin-top: 50px;
+  margin-top: 60px;
   font-size: 0.5rem;
-}
-
-.power{
-  padding-top: 70px;
 }
 
 }
@@ -1245,13 +1237,10 @@ margin-right: 5px;
 }
 
 .connect h6{
-margin-top: 50px;
+margin-top: 70px;
 font-size: 0.5rem;
 }
 
-.power{
-padding-top: 70px;
-}
 
 }
 
@@ -1302,11 +1291,8 @@ margin-right: 5px;
 
 
 .connect h6{
-  margin-top: 50px;
+  margin-top: 80px;
   font-size: 0.5rem;
 }
 
-.power{
-  padding-top: 70px;
-}
 }

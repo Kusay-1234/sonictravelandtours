@@ -172,6 +172,11 @@ body{
 .large-image img {
   width: 80%; /* Make the image fill the container */
   height: auto; /* Maintain the image's aspect ratio */
+  transition: transform 0.3s ease;  /* Smooth transition for the zoom effect */
+}
+
+.large-image img:hover{
+  transform: scale(0.9); /* Zoom in by 20% on hover */
 }
 
 /* Styling for the price details (elements + description) on the right */
@@ -221,6 +226,27 @@ body{
 .price-icon img {
   width: 50px;
   height: 50px;
+  animation: shake 3s ease-in-out infinite; /* Trigger the shake animation when the page loads */
+}
+
+
+/* Keyframes for the shaking effect */
+@keyframes shake {
+  0% {
+    transform: translateY(0); /* Start at original position */
+  }
+  25% {
+    transform: translateY(-10px); /* Move left */
+  }
+  50% {
+    transform: translateY(10px); /* Move right */
+  }
+  75% {
+    transform: translateY(-10px); /* Move left again */
+  }
+  100% {
+    transform: translateY(0); /* Return to original position */
+  }
 }
 
 /* Description paragraph under the four elements */
@@ -242,6 +268,11 @@ body{
 .large-image1 img {
   width: 80%; /* Make the image fill the container */
   height: auto; /* Maintain the image's aspect ratio */
+  transition: transform 0.3s ease;  /* Smooth transition for the zoom effect */
+}
+
+.large-image1 img:hover{
+  transform: scale(0.9); /* Zoom in by 20% on hover */
 }
 
 /* Styling for the price details (elements + description) on the right */
@@ -299,6 +330,11 @@ body{
 .large-image3 img {
   width: 80%; /* Make the image fill the container */
   height: auto; /* Maintain the image's aspect ratio */
+  transition: transform 0.3s ease;  /* Smooth transition for the zoom effect */
+}
+
+.large-image3 img:hover{
+  transform: scale(0.9); /* Zoom in by 20% on hover */
 }
 
 /* Styling for the price details (elements + description) on the right */
@@ -411,14 +447,8 @@ input[placeholder="Write your message"]{
   margin-top: 100px;
 }
 
-.power{
-  padding-top: 100px;
-  display: flex;
-  justify-content: center;
-}
-
 .power a{
-  color: black;
+  color: royalblue;
   text-decoration: none;
 }
 
@@ -680,12 +710,8 @@ input[placeholder="Write your message"]{
   }
 
   .connect h6{
-    margin-top: 40px;
+    margin-top: 50px;
     font-size: 0.4rem;
-  }
-
-  .power{
-    padding-top: 60px;
   }
   
   }
@@ -964,14 +990,9 @@ input[placeholder="Write your message"]{
 }
 
 .connect h6{
-  margin-top: 50px;
+  margin-top: 60px;
   font-size: 0.5rem;
 }
-
-.power{
-  padding-top: 70px;
-}
-
 }
 
 @media only screen and (min-width: 481px) and (max-width: 660px) {
@@ -1222,14 +1243,10 @@ input[placeholder="Write your message"] {
 }
 
 .connect h6{
-  margin-top: 50px;
+  margin-top: 70px;
   font-size: 0.5rem;
 }
 
-.power{
-  padding-top: 70px;
-}
- 
 }
 
 @media only screen and (min-width: 1025px) and (max-width: 1200px) {
@@ -1280,14 +1297,9 @@ margin-right: 5px;
 
 
 .connect h6{
-  margin-top: 50px;
+  margin-top: 80px;
   font-size: 0.5rem;
 }
-
-.power{
-  padding-top: 70px;
-}
-
 }
 
 
