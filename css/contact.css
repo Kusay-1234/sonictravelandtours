@@ -5,6 +5,10 @@
   font-family: "Poppins";
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 
 body{
   overflow-x: hidden;
@@ -91,13 +95,13 @@ body{
   padding: 15px;  
 }
 
-.phone, .email, .address{
+.phone, .email, .address, .whatsapp{
   display: flex;
   padding-bottom: 30px;
   transition: transform 0.3s ease;  /* Smooth transition for the zoom effect */
 }
 
-.phone:hover, .email:hover, .address:hover{
+.phone:hover, .email:hover, .address:hover, .whatsapp:hover{
   transform: scale(1.1); /* Zoom in by 20% on hover */
 }
 
@@ -123,6 +127,12 @@ body{
   margin-top: 6px;
   padding-left: 5px;
 }
+
+.phone-content a, .email-content a, .address-content a{
+  color: black;
+  text-decoration: none;
+}
+
 
 .phone-content p, .email-content p, .address-content p{
   font-size: 0.8rem;
@@ -152,7 +162,6 @@ body{
   display: flex;
 }
 
-
 .form h2{
   font-size: 2rem;
   padding-bottom: 15px;
@@ -176,7 +185,18 @@ input[type="text"] {
   outline: none; /* Remove focus outline */
   background-color: transparent; /* Transparent background */
   font-size: 0.9rem;
-  color: #797979;
+  /* color: #797979; */
+}
+
+input[type="phone number"] {
+  width: 90%; /* Makes input stretch to full container width */
+  padding-top: 30px;
+  border: none; /* Remove the default border */
+  border-bottom: 2px solid #797979; /* Underline the input */
+  outline: none; /* Remove focus outline */
+  background-color: transparent; /* Transparent background */
+  font-size: 0.9rem;
+  color: #797979 !important;
 }
 
 input[type="text"]:focus {
@@ -290,7 +310,8 @@ input[placeholder="Write your message"]{
 
 .send{
   border: 2px solid white;
-  padding: 15px;
+  padding: 12px;
+  margin-right: 5px;
   font-size: 0.9rem;
   background-color: black;
   color: white;
@@ -309,9 +330,36 @@ input[placeholder="Write your message"]{
   text-decoration: none;
 }
 
-#name::placeholder, #mail::placeholder, #sms::placeholder{
+#name::placeholder, #mail::placeholder, #sms::placeholder, #mob::placeholder{
   color: #797979;
 }
+
+.map iframe{
+  position: relative;
+  top: -60px;
+}
+
+
+/* Basic styling for the button */
+.scroll-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #008515;
+  color: white;
+  border: none;
+  border-radius: 0px;
+  padding: 12px;
+  width: 50px;
+  height: 40px;
+  padding-top: 2px;
+  font-size: 20px;
+  cursor: pointer;
+  display: none; /* Initially hidden */
+  transition: 0.3s;
+  z-index: 9999;
+}
+
 
 /* Responsive Design */
 @media only screen and (min-width: 320px) and (max-width: 400px) {
@@ -342,7 +390,7 @@ input[placeholder="Write your message"]{
   .contact-us{
     margin-top: 0px;
     margin-left: 0;
-    margin-right: 0px;
+    margin-right: 10px;
   }
   
   .contact-us a{
@@ -381,7 +429,7 @@ input[placeholder="Write your message"]{
   .contact-us{
     margin-top: 0px;
     margin-left: 0;
-    margin-right: 0px;
+    margin-right: 10px;
   }
   
   .contact-us a{
@@ -403,7 +451,7 @@ input[placeholder="Write your message"]{
 }
 
 .contact-sonic p{
-  font-size: 0.8rem;
+  font-size: 0.6rem;
   margin: 0;
 }
 
@@ -414,15 +462,16 @@ input[placeholder="Write your message"]{
 
 .get-in{
   margin-top: 0;
+  margin-left: 30px;
 }
 
 .get-in h2 {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   margin-left: 0;
 }
 
 .get-in #get {
-font-size: 0.8rem;
+font-size: 0.6rem;
 max-width: 100%;
 }
 
@@ -472,7 +521,7 @@ input[type="text"] {
 
 .form p{
   padding-top: 20px;
-  font-size: 0.7rem;
+  font-size: 0.6rem;
 }
 
 .form button{
@@ -548,6 +597,19 @@ input[type="text"] {
     margin-top: 50px;
     font-size: 0.4rem;
   }
+
+  iframe{
+    width: 94%;
+    height: 200px;
+  }
+
+  .scroll-to-top {
+    padding: 8px;
+    width: 35px;
+    height: 30px;
+    font-size: 15px;
+    padding-top: 2px;
+  }
 }
 
 
@@ -579,7 +641,7 @@ input[type="text"] {
   .contact-us{
     margin-top: 0px;
     margin-left: 0;
-    margin-right: 0px;
+    margin-right: 10px;
   }
   
   .contact-us a{
@@ -617,7 +679,7 @@ input[type="text"] {
   .contact-us{
     margin-top: 8px;
     margin-left: 0;
-    margin-right: 0px;
+    margin-right: 10px;
   }
   
   .contact-us a{
@@ -774,6 +836,19 @@ padding-bottom: 5px;
 .connect h6{
   margin-top: 60px;
   font-size: 0.5rem;
+}
+
+iframe{
+  width: 94%;
+  height: 220px;
+}
+
+.scroll-to-top {
+  padding: 8px;
+  width: 35px;
+  height: 30px;
+  font-size: 15px;
+  padding-top: 2px;
 }
 
 }
@@ -961,6 +1036,18 @@ input[placeholder="Write your message"] {
   font-size: 0.5rem;
 }
 
+iframe{
+  width: 94%;
+  height: 250px;
+}
+
+.scroll-to-top {
+  padding: 8px;
+  width: 35px;
+  height: 30px;
+  font-size: 15px;
+  padding-top: 2px;
+}
 }
 
 @media only screen and (min-width: 1025px) and (max-width: 1200px) {
@@ -998,6 +1085,16 @@ font-size: 0.6rem;
 font-size: 0.8rem;
 margin-right: 5px;
 }
+
+}
+
+@media only screen and (min-width: 1300px) and (max-width: 1500px) {
+
+  .form button{
+    margin-left: 320px;
+  }
+
+
 
 }
 

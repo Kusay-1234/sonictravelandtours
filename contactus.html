@@ -13,7 +13,6 @@
     href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
     rel="stylesheet">
 </head>
-
 <body>
   <header>
     <div class="front">
@@ -30,7 +29,7 @@
         <a href="contactus.html">Contact Us</a>
       </div>
     </div>
-
+    <button id="scrollToTopBtn" class="scroll-to-top">↑</button>
   </header>
   <main>
     <section class="bg">
@@ -39,20 +38,32 @@
         <p>Contact us today for seamless travel solutions and let us help you plan your next unforgettable journey with ease and expertise.</p>
       </div>
     </section>
-
     <section class="bg1">
       <div class="info">
         <div class="get-in">
           <h2>Get in touch</h2>
           <p id="get"> Connect with us for reliable and professional travel services, including seamless support for planning memorable trips, trusted for flight ticketing, hotel booking, visa assistance, and tailored travel packages.</p>
-
           <div class="phone">
             <div class="circle-overlay">
               <img src="public/images/icons8-call-50 (1).png" alt="Circle Image 1" class="circle-img">
             </div>
             <div class="phone-content">
+              <a href="tel:+971502952872">
               <h5>Phone number</h5> 
               <p>+971 50 295 2872</p>
+            </a>
+            </div>
+          </div>
+
+          <div class="whatsapp">
+            <div class="circle-overlay">
+              <img src="public/images/icons8-whatsapp-50.png" alt="Circle Image 1" class="circle-img">
+            </div>
+            <div class="phone-content">
+              <a href="https://wa.me/971502547958">
+              <h5>Whatsapp number</h5> 
+              <p>+971 502 547 958</p>
+            </a>
             </div>
           </div>
 
@@ -61,9 +72,11 @@
               <img src="public/images/icons8-email-100.png" alt="Circle Image 1" class="circle-img">
             </div>
             <div class="email-content">
+              <a href="mailto:admin@sonictravel.ae">
               <h5>E-mail</h5>
               <p>admin@sonictravel.ae </p>
                 <p>sonictt@emirates.net.ae</p>
+              </a>
             </div>
           </div>
 
@@ -72,8 +85,10 @@
               <img src="public/images/icons8-location-100.png" alt="Circle Image 1" class="circle-img">
             </div>
             <div class="address-content">
+              <a href="https://www.google.com/maps/place/Sonic+Travel+%26+Tours/@25.27357,55.303723,16z/data=!4m6!3m5!1s0x3e5f434f6fa15baf:0x11a17545d7fca16e!8m2!3d25.2735696!4d55.3037229!16s%2Fg%2F11bbwn0x3s?hl=en&entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D">
               <h5>Address</h5>
-              <p>Dubai,UAE</p>
+              <p>78F3+CFH - Deira - Dubai - United Arab Emirates</p>
+            </a>
             </div>
           </div>
           <div class="divider"></div>
@@ -92,17 +107,18 @@
         <div class="form">
           <h2>Send a Message</h2>
           <input type="text" placeholder="Name" id="name" required>
+          <input type="phone number" placeholder="Mobile number" id="mob" required>
           <input type="text" placeholder="Email address" id="mail" required>
           <input type="text" placeholder="Message" id="sms" required>
           <p>Have questions or need assistance? Submit your message, and our team will get back to you promptly to help plan your next unforgettable journey with ease.</p>
-          <button>Submit</button>
+          <button id="sendMessageButton">Submit</button>
         </div>
       </div>
     </section>
 
     <section class="bg3">
       <div class="map">
-      <img src="public/images/02cbbffcb7d3d8370fe916e82a760594.jpg" alt="MAP IMAGE">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3607.911141619107!2d55.30114797540265!3d25.273574428602835!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f434f6fa15baf%3A0x11a17545d7fca16e!2sSonic%20Travel%20%26%20Tours!5e0!3m2!1sen!2sin!4v1733394145094!5m2!1sen!2sin" width="800" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
     </section>
   </main>
@@ -136,6 +152,9 @@
 
   </footer>
 
+  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  <script src="js/contact.js"></script>
+  <script src="js/scrollbutton.js"></script>
 
 </body>
 

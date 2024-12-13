@@ -41,6 +41,24 @@ body{
   margin-left: 50px;
 }
 
+/* General styles for navbar links */
+.navbar li a::after {
+  content: "• • • •"; /* Four dots */
+  display: block;
+  margin: -8px auto;
+  text-align: center;
+  font-size: 14px; /* Adjust size as needed */
+  margin-left: 50px;
+  color: black;
+  opacity: 0; /* Hidden by default */
+  transition: opacity 0.3s ease-in-out;
+}
+
+/* Highlight the active link based on the current page */
+.navbar li a.active::after {
+  opacity: 1; /* Make the dots visible for the active page */
+}
+
 .contact-us{
   margin-top: 30px;
   margin-left: 0;
@@ -119,7 +137,7 @@ body{
 /* Positioning and styling for the Follow Us container */
 .follow-us {
   position: fixed;  /* Fixes it in place while scrolling */
-  top: 80%; /* You can adjust this value to position it vertically */
+  top: 65%; /* You can adjust this value to position it vertically */
   right: 10px; /* Position it on the left side, adjust as needed */
   transform: translateY(-50%); /* Center it vertically */
   padding: 10px;
@@ -202,6 +220,19 @@ body{
   color: rgba(255, 255, 255, 0.4); 
   margin-right: 50px; /* Space between "01" and the line */
   position: relative; /* So the line can be positioned above it */
+  animation: shake1 2s ease-in infinite;
+}
+
+@keyframes shake1 {
+  0% {
+    transform: translateY(0); /* Start at original position */
+  }
+  50% {
+    transform: translateY(10px); /* Move right */
+  }
+  100% {
+    transform: translateY(0); /* Return to original position */
+  }
 }
 
 /* Green line under the "01" */
@@ -290,6 +321,7 @@ body{
   color: rgba(255, 255, 255, 0.4); 
   margin-left: 90px;
   position: relative; /* So the line can be positioned above it */
+  animation: shake1 2s ease-in infinite;
 }
 
 /* Green line under the "01" */
@@ -352,6 +384,7 @@ body{
   color: rgba(255, 255, 255, 0.4); 
   margin-left: 90px;
   position: relative; /* So the line can be positioned above it */
+  animation: shake1 2s ease-in infinite;
 }
 
 /* Green line under the "01" */
@@ -452,6 +485,27 @@ input[placeholder="Write your message"]{
   text-decoration: none;
 }
 
+/* Basic styling for the button */
+.scroll-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #008515;
+  color: white;
+  border: none;
+  border-radius: 0px;
+  padding: 12px;
+  width: 50px;
+  height: 40px;
+  padding-top: 2px;
+  font-size: 20px;
+  cursor: pointer;
+  display: none; /* Initially hidden */
+  transition: 0.3s;
+  z-index: 9999;
+}
+
+
 
 
 @media only screen and (min-width: 320px) and (max-width: 400px) {
@@ -478,11 +532,17 @@ input[placeholder="Write your message"]{
     margin-left: 10px;
     font-size: 8px;
   }
+
+  .navbar li a::after{
+    margin: -8px auto;
+    font-size: 7px;
+    margin-left: 18px;
+  }
   
   .contact-us{
     margin-top: 0px;
     margin-left: 0;
-    margin-right: 0px;
+    margin-right: 10px;
   }
   
   .contact-us a{
@@ -516,11 +576,18 @@ input[placeholder="Write your message"]{
     margin-left: 11px;
     font-size: 10px;
   }
+
+  .navbar li a::after{
+    margin: -8px auto;
+    font-size: 7px;
+    margin-left: 18px;
+  }
+  
   
   .contact-us{
     margin-top: 0px;
     margin-left: 0;
-    margin-right: 0px;
+    margin-right: 10px;
   }
   
   .contact-us a{
@@ -713,6 +780,14 @@ input[placeholder="Write your message"]{
     margin-top: 50px;
     font-size: 0.4rem;
   }
+
+  .scroll-to-top {
+    padding: 8px;
+    width: 35px;
+    height: 30px;
+    font-size: 15px;
+    padding-top: 2px;
+  }
   
   }
   
@@ -741,11 +816,18 @@ input[placeholder="Write your message"]{
       margin-left: 28px;
       font-size: 11px;
     }
+
+    .navbar li a::after{
+      margin: -9px auto;
+      font-size: 11px;
+      margin-left: 27px;
+    }
+    
     
     .contact-us{
       margin-top: 0px;
       margin-left: 0;
-      margin-right: 0px;
+      margin-right: 10px;
     }
     
     .contact-us a{
@@ -779,11 +861,16 @@ input[placeholder="Write your message"]{
       margin-left: 30px;
       font-size: 13px;
     }
+
+    .navbar li a::after {
+      margin-left: 30px;
+      font-size: 11px;
+    }
     
     .contact-us{
       margin-top: 8px;
       margin-left: 0;
-      margin-right: 0px;
+      margin-right: 10px;
     }
     
     .contact-us a{
@@ -993,6 +1080,14 @@ input[placeholder="Write your message"]{
   margin-top: 60px;
   font-size: 0.5rem;
 }
+
+.scroll-to-top {
+  padding: 8px;
+  width: 35px;
+  height: 30px;
+  font-size: 15px;
+  padding-top: 2px;
+}
 }
 
 @media only screen and (min-width: 481px) and (max-width: 660px) {
@@ -1041,6 +1136,11 @@ input[placeholder="Write your message"]{
   .navbar li a{
     margin-left: 42px;
     font-size: 14px;
+  }
+
+  .navbar li a::after {
+    margin-left: 40px;
+    font-size: 12px;
   }
   
   .contact-us{
@@ -1245,6 +1345,14 @@ input[placeholder="Write your message"] {
 .connect h6{
   margin-top: 70px;
   font-size: 0.5rem;
+}
+
+.scroll-to-top {
+  padding: 8px;
+  width: 35px;
+  height: 30px;
+  font-size: 15px;
+  padding-top: 2px;
 }
 
 }

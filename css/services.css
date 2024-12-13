@@ -9,6 +9,11 @@ body{
   overflow-x: hidden;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+
 .front{
   display: flex;
   justify-content: space-between;
@@ -35,6 +40,24 @@ body{
   text-decoration: none;
   color: black;
   margin-left: 50px;
+}
+
+/* General styles for navbar links */
+.navbar li a::after {
+  content: "• • • •"; /* Four dots */
+  display: block;
+  margin: -8px auto;
+  text-align: center;
+  font-size: 14px; /* Adjust size as needed */
+  margin-left: 50px;
+  color: black;
+  opacity: 0; /* Hidden by default */
+  transition: opacity 0.3s ease-in-out;
+}
+
+/* Highlight the active link based on the current page */
+.navbar li a.active::after {
+  opacity: 1; /* Make the dots visible for the active page */
 }
 
 .contact-us{
@@ -283,6 +306,26 @@ input[placeholder="Write your message"]{
 }
 
 
+/* Basic styling for the button */
+.scroll-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #008515;
+  color: white;
+  border: none;
+  border-radius: 0px;
+  padding: 12px;
+  width: 50px;
+  height: 40px;
+  padding-top: 2px;
+  font-size: 20px;
+  cursor: pointer;
+  display: none; /* Initially hidden */
+  transition: 0.3s;
+  z-index: 9999;
+}
+
 /* Responsive design */
 
 @media only screen and (min-width: 320px) and (max-width: 400px) {
@@ -309,11 +352,18 @@ input[placeholder="Write your message"]{
     margin-left: 10px;
     font-size: 8px;
   }
+
+  .navbar li a::after{
+    margin: -8px auto;
+    font-size: 7px;
+    margin-left: 18px;
+  }
+  
   
   .contact-us{
     margin-top: 0px;
     margin-left: 0;
-    margin-right: 0px;
+    margin-right: 10px;
   }
   
   .contact-us a{
@@ -355,11 +405,17 @@ input[placeholder="Write your message"]{
     margin-left: 11px;
     font-size: 10px;
   }
+
+  .navbar li a::after{
+    margin: -8px auto;
+    font-size: 7px;
+    margin-left: 18px;
+  }
   
   .contact-us{
     margin-top: 0px;
     margin-left: 0;
-    margin-right: 0px;
+    margin-right: 10px;
   }
   
   .contact-us a{
@@ -509,6 +565,14 @@ justify-content: center;
   margin-top: 50px;
   font-size: 0.4rem;
 }
+
+.scroll-to-top {
+  padding: 8px;
+  width: 35px;
+  height: 30px;
+  font-size: 15px;
+  padding-top: 2px;
+}
 }
 
 
@@ -536,11 +600,17 @@ justify-content: center;
     margin-left: 28px;
     font-size: 11px;
   }
+
+  .navbar li a::after{
+    margin: -9px auto;
+    font-size: 11px;
+    margin-left: 27px;
+  }
   
   .contact-us{
     margin-top: 0px;
     margin-left: 0;
-    margin-right: 0px;
+    margin-right: 10px;
   }
   
   .contact-us a{
@@ -582,11 +652,16 @@ justify-content: center;
     margin-left: 30px;
     font-size: 13px;
   }
+
+  .navbar li a::after {
+    margin-left: 30px;
+    font-size: 11px;
+  }
   
   .contact-us{
     margin-top: 8px;
     margin-left: 0;
-    margin-right: 0px;
+    margin-right: 10px;
   }
   
   .contact-us a{
@@ -727,6 +802,14 @@ padding-bottom: 5px;
   font-size: 0.5rem;
 }
 
+.scroll-to-top {
+  padding: 8px;
+  width: 35px;
+  height: 30px;
+  font-size: 15px;
+  padding-top: 2px;
+}
+
 }
 
 
@@ -753,6 +836,11 @@ padding-bottom: 5px;
   .navbar li a{
     margin-left: 42px;
     font-size: 14px;
+  }
+
+  .navbar li a::after {
+    margin-left: 40px;
+    font-size: 12px;
   }
   
   .contact-us{
@@ -898,6 +986,14 @@ margin-right: 5px;
 .connect h6{
   margin-top: 70px;
   font-size: 0.5rem;
+}
+
+.scroll-to-top {
+  padding: 8px;
+  width: 35px;
+  height: 30px;
+  font-size: 15px;
+  padding-top: 2px;
 }
 
 }
