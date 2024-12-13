@@ -132,7 +132,7 @@ body{
 .main-image {
   position: relative;
   width: 100%;
-  overflow: hidden; /* Ensure the circle image is clipped to the boundaries */
+  overflow: visible; /* Ensure the circle image is clipped to the boundaries */
   border-radius: 10px;
   transform-style: preserve-3d;
   transition: transform 0.6s;
@@ -152,7 +152,7 @@ body{
 /* Circle overlay image */
 .circle-overlay {
   position: absolute;
-  top: 88%;
+  top: 95%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 60px; /* Adjust the size of the circle image */
@@ -163,6 +163,22 @@ body{
   transition: background-color 0.3s ease; /* For smooth background transition */
 }
 
+.overlay{
+  top: 88%;
+}
+
+.change{
+  margin-top: 35px;
+}
+
+img[alt="Large Image 2"], img[alt="Large Image 3"]{
+  width: 90%;
+}
+
+.item{
+  margin-top: 40px;
+}
+
 .circle-overlay:hover{
   background-color: rgb(219, 255, 212);
 }
@@ -171,7 +187,7 @@ body{
   width: 100%;
   height: 100%;
   object-fit: cover; /* Ensure the circle image is fully contained within the circle */
-  padding: 10px;
+  padding: 13px;
   z-index: 1;
 }
 
@@ -438,7 +454,6 @@ input[placeholder="Write your message"]{
 }
 
 
-
 @media only screen and (min-width: 320px) and (max-width: 400px) {
   
   .front{
@@ -481,6 +496,22 @@ input[placeholder="Write your message"]{
     padding: 2px 2px;
     font-size: 8px;
   }  
+
+  img[alt="Large Image 2"], img[alt="Large Image 3"]{
+    width: 90%;
+  }
+  
+  .item{
+    margin-top: 8px;
+  }
+
+  .overlay{
+  top: 90%;
+  }
+
+  .change{
+    margin-top: 12px;
+  }
 }
 
 @media only screen and (min-width: 401px) and (max-width: 480px) {
@@ -525,6 +556,22 @@ input[placeholder="Write your message"]{
     padding: 2px 2px;
     font-size: 10px;
   }  
+
+  img[alt="Large Image 2"], img[alt="Large Image 3"]{
+    width: 90%;
+  }
+  
+  .item{
+    margin-top: 8px;
+  }
+
+  .overlay{
+  top: 90%;
+  }
+
+  .change{
+    margin-top: 10px;
+  }
 }
 
 @media only screen and (max-width: 480px) {
@@ -576,7 +623,7 @@ input[placeholder="Write your message"]{
       width: 100%;
       height: auto;
       max-height: 120px; /* Set a max height instead of fixed height */
-      overflow: hidden;
+      overflow: visible;
     }
   
     /* Adjusting the images in .main-image */
@@ -778,6 +825,10 @@ justify-content: center;
   padding-top: 2px;
 }
 
+h4{
+  margin-top: 10px;
+}
+
 }
 
 
@@ -824,6 +875,15 @@ justify-content: center;
     padding: 2px 2px;
     font-size: 11px;
   }  
+
+  .item{
+    margin-top: 15px;
+  }
+
+  .change{
+    margin-top: 18px;
+  }
+
 }
 
 @media only screen and (min-width: 601px) and (max-width: 767px) {
@@ -867,6 +927,15 @@ justify-content: center;
     padding: 2px 2px;
     font-size: 13px;
   }  
+
+  .item{
+    margin-top: 20px;
+  }
+
+  .change{
+    margin-top: 20px;
+  }
+
 }
 
 @media only screen and (min-width: 481px) and (max-width: 767px) {
@@ -1183,6 +1252,15 @@ padding-bottom: 5px;
     h4{
       font-size: 1.2rem;
     }
+
+    
+img[alt="Large Image 2"], img[alt="Large Image 3"]{
+  width: 90%;
+}
+
+.item{
+  margin-top: 30px;
+}
 
     .sonic-journey img {
       width: 50%;
