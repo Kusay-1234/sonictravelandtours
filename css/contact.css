@@ -9,7 +9,6 @@ html{
   scroll-behavior: smooth;
 }
 
-
 body{
   overflow-x: hidden;
 }
@@ -1093,8 +1092,6 @@ margin-right: 5px;
   .form button{
     margin-left: 320px;
   }
-
-
 
 }
 
